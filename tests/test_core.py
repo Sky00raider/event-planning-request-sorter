@@ -74,3 +74,43 @@ def test_milestone_1_validation_catches_leaks_and_bad_labels():
     assert any("repeated" in p for p in problems) and any("unknown label" in p for p in problems)
 
 
+# ===== Milestone 2: extended tokenizer and model
+def test_milestone_2_each_label_is_one_new_token_and_embeddings_grow():
+    model, tok = tiny_base()
+    before = model.get_input_embeddings().weight.shape[0]
+    ids = core.add_label_tokens(model, tok, LABELS3)
+    assert model.get_input_embeddings().weight.shape[0] == before + 3
+    assert ids == list(range(before, before + 3))
+    assert tok("<venue_inquiry>", add_special_tokens=False).input_ids == [ids[0]]
+    assert tok.pad_token == tok.eos_token
+
+
+def test_milestone_2_new_rows_start_as_the_mean_of_the_label_words():
+    model, tok = tiny_base()
+    weight = model.get_input_embeddings().weight.detach().clone()
+    ids = core.add_label_tokens(model, tok, LABELS3)
+    words = tok(core.label_words("catering_request"), add_special_tokens=False).input_ids
+    assert torch.allclose(model.get_input_embeddings().weight[ids[1]], weight[words].mean(dim=0), atol=1e-6)
+
+
+def test_milestone_2_only_label_rows_get_gradient():
+    model, tok = tiny_base()
+    ids = core.add_label_tokens(model, tok, LABELS3)
+    core.train_only_label_rows(model, ids)
+    enc = core.RequestEncoder(tok, ids, 32)
+    ex = torch.tensor([enc.training_examples(["a hall"], [0])[0]])
+    labels = torch.full_like(ex, -100)
+    labels[0, -1] = ex[0, -1]                       # score only the label position
+    model(input_ids=ex, labels=labels).loss.backward()
+    grad = model.get_input_embeddings().weight.grad
+    assert grad[ids].abs().sum() > 0 and grad[:ids[0]].abs().sum() == 0
+
+
+def test_milestone_2_encoder_puts_the_label_last_and_truncates_long_requests():
+    model, tok = tiny_base()
+    ids = core.add_label_tokens(model, tok, LABELS3)
+    enc = core.RequestEncoder(tok, ids, 16)
+    ex = enc.training_examples(["hall " * 50, "hall"], [2, 0])
+    assert ex[0][-1] == ids[2] and ex[1][-1] == ids[0] and len(ex[0]) <= 16
+
+
