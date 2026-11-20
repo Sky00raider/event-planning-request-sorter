@@ -1,0 +1,737 @@
+{"text": "Looking for a banquet hall in Bengaluru that can seat around 300 guests for a wedding reception on 12 Dec.", "label": "venue_inquiry", "split": "train"}
+{"text": "Do you have any lawns available in Pune for an outdoor engagement function next month?", "label": "venue_inquiry", "split": "train"}
+{"text": "hi we need a hall near Indiranagar for a 50th birthday party about 80 people is anything free on 8th march", "label": "venue_inquiry", "split": "train"}
+{"text": "Can you suggest resorts in Mysuru with a banquet and rooms for a corporate offsite of 60 people?", "label": "venue_inquiry", "split": "train"}
+{"text": "What is the maximum capacity of the Grand Orchid hall? We are expecting nearly 450 guests.", "label": "venue_inquiry", "split": "train"}
+{"text": "Need a beach venue in Goa for a destination wedding, 120 pax, sometime in February 2027.", "label": "venue_inquiry", "split": "train"}
+{"text": "Is the rooftop terrace available for a farewell party on the last Friday of this month?", "label": "venue_inquiry", "split": "train"}
+{"text": "Please share a list of heritage properties or palaces in Rajasthan suitable for a sangeet night with 200 guests.", "label": "venue_inquiry", "split": "train"}
+{"text": "venue for baby shower south delhi ac hall 40 people sunday", "label": "venue_inquiry", "split": "train"}
+{"text": "We are organising a product launch and need a venue with a stage, projector and parking for 150 attendees in Hyderabad. Kindly share options.", "label": "venue_inquiry", "split": "train"}
+{"text": "Any open-air gardens in Kochi near the backwaters? Planning a small engagement ceremony for 70 people on 15/02/2027.", "label": "venue_inquiry", "split": "train"}
+{"text": "Which halls do you tie up with in Chennai for a reception? Our guest list is roughly 500 and we want a place with ample car parking.", "label": "venue_inquiry", "split": "train"}
+{"text": "Hello, I'd like to know if the lakeside resort you mentioned is free on the 3rd weekend of January, we would need it for two days.", "label": "venue_inquiry", "split": "train"}
+{"text": "Can a 25-person housewarming be held in a clubhouse? Looking for something in Whitefield, preferably with a party hall that has a kitchen.", "label": "venue_inquiry", "split": "train"}
+{"text": "Suggest a good conference hall in Dubai for a two-day seminar with about 250 delegates.", "label": "venue_inquiry", "split": "train"}
+{"text": "venue pls for college fest, need an open auditorium or ground that fits 1500 students in Mangaluru", "label": "venue_inquiry", "split": "train"}
+{"text": "Our company wants to host an annual day at a farmhouse or resort outside the city, within 2 hours of Bengaluru. Around 180 employees. Any recommendations?", "label": "venue_inquiry", "split": "train"}
+{"text": "Is there an indoor option in case it rains? We booked nothing yet, just trying to find a garden venue in Lonavala for 100 people.", "label": "venue_inquiry", "split": "train"}
+{"text": "Searching for a mandap-ready hall in Thrissur for an August wedding. Capacity should be 600+, with a separate dining hall.", "label": "venue_inquiry", "split": "train"}
+{"text": "wanted to check if the farmhouse near Devanahalli is available for a 1st birthday on 22 Nov and how many people it can hold", "label": "venue_inquiry", "split": "train"}
+{"text": "Tell me which banquet halls are free on 14 Feb 2027 in Gurgaon.", "label": "venue_inquiry", "split": "train"}
+{"text": "We need a small private dining room or boutique hotel for an anniversary dinner, 12 guests, Mumbai, Bandra side if possible.", "label": "venue_inquiry", "split": "train"}
+{"text": "Hoping to find a pet-friendly outdoor space in Coorg for a surprise birthday trip. Group of 20. What do you have?", "label": "venue_inquiry", "split": "train"}
+{"text": "Could you check if the convention centre has a hall with at least 1000 seats and a green room? It's for a conference in the first week of April.", "label": "venue_inquiry", "split": "train"}
+{"text": "venue options near airport Kochi for a 2-day corporate meet", "label": "venue_inquiry", "split": "train"}
+{"text": "Are there any temple-side kalyana mantapas in Mysuru that are free in the muhurtham month of May?", "label": "venue_inquiry", "split": "train"}
+{"text": "We have a guest list of 350 and need an AC hall with a large dining area in Hubballi; kindly confirm availability for 9th Jan.", "label": "venue_inquiry", "split": "train"}
+{"text": "Planning a New Year's Eve bash for 200 on a terrace or poolside. Which places can you offer in Bengaluru?", "label": "venue_inquiry", "split": "train"}
+{"text": "Could you tell me about the seating capacity and floor area of the ballroom, theatre style and banquet style both?", "label": "venue_inquiry", "split": "train"}
+{"text": "ladies sangeet in Ahmedabad, around 100 women, we want a hall with a good sound system and dance floor, what places are there", "label": "venue_inquiry", "split": "train"}
+{"text": "Can you send photos or a virtual tour of the available halls in Coimbatore? Looking to book for a reception in March.", "label": "venue_inquiry", "split": "train"}
+{"text": "Interested in a vineyard or winery venue in Nashik for a team outing of 45 people. Do you have anything like that?", "label": "venue_inquiry", "split": "train"}
+{"text": "Our wedding is in Udaipur, we want a lake-facing property for 250 guests. Which ones can host both ceremony and reception in the same place?", "label": "venue_inquiry", "split": "train"}
+{"text": "Trying to find a cosy cafe or restaurant that can be booked fully for a farewell party, 30 pax, around Koramangala.", "label": "venue_inquiry", "split": "train"}
+{"text": "Do any of your partner venues allow outside catering? Asking before I shortlist halls in Pune.", "label": "venue_inquiry", "split": "train"}
+{"text": "Is the open lawn at the club free for an evening wedding in the second week of December? Also what's the max headcount?", "label": "venue_inquiry", "split": "train"}
+{"text": "My daughter's engagement is coming up and we want a hall in Kozhikode, not too big, about 150 people. Please advise what's open in October.", "label": "venue_inquiry", "split": "train"}
+{"text": "Seeking a pool party venue in Hyderabad for a 30th birthday, evening, 50 people, with permission for music till midnight.", "label": "venue_inquiry", "split": "train"}
+{"text": "we need two halls in same building for the mehendi and the wedding in Jaipur, available on 20 and 21 Feb. is that possible", "label": "venue_inquiry", "split": "train"}
+{"text": "Could you recommend a venue in Singapore or Dubai for a corporate gala of 300? We are flexible on the city.", "label": "venue_inquiry", "split": "train"}
+{"text": "Do you know any good banquet halls around Jayanagar for a 60th birthday dinner, roughly 100 people?", "label": "venue_inquiry", "split": "val"}
+{"text": "We're thinking of a seaside resort in Kovalam for a small wedding in late November. What's available?", "label": "venue_inquiry", "split": "val"}
+{"text": "hall for 200 pax in Noida on 5 Jan, any free?", "label": "venue_inquiry", "split": "val"}
+{"text": "Please let me know whether the hotel ballroom can take a 400 person conference with classroom seating.", "label": "venue_inquiry", "split": "val"}
+{"text": "Where can we host a college alumni meet of about 250 people in Chennai? Auditorium or open lawn both fine.", "label": "venue_inquiry", "split": "val"}
+{"text": "Planning a haldi at a garden in Mysuru, the week of 10th Feb. Which gardens do you have access to?", "label": "venue_inquiry", "split": "val"}
+{"text": "Looking for any heritage home or haveli in Jaipur to host a 40 person anniversary lunch.", "label": "venue_inquiry", "split": "val"}
+{"text": "is the terrace hall at your Pune partner venue booked on 28/03/2027?", "label": "venue_inquiry", "split": "val"}
+{"text": "Could you share the capacity and parking details of the resorts near Bannerghatta road? It's for a 120 member team retreat.", "label": "venue_inquiry", "split": "val"}
+{"text": "A friend recommended a houseboat or lake venue in Alleppey for a bachelorette. 15 girls, any suggestions?", "label": "venue_inquiry", "split": "val"}
+{"text": "Need a ballroom in Bengaluru with a minimum of 700 seating for a reception in February, can you list options?", "label": "venue_inquiry", "split": "test"}
+{"text": "Is an outdoor lawn free in Gurugram on 18 October for a baby shower of around 60 guests?", "label": "venue_inquiry", "split": "test"}
+{"text": "any banquet hall in Trivandrum that's free for 11th Dec, about 250 people", "label": "venue_inquiry", "split": "test"}
+{"text": "We want to hold our company's product launch in a trendy space, like a loft or gallery, in Mumbai. What spaces can you get us?", "label": "venue_inquiry", "split": "test"}
+{"text": "What venues are available for a destination wedding in Goa in the 2nd week of March? We'll have 180 guests flying in.", "label": "venue_inquiry", "split": "test"}
+{"text": "Could you tell me if the clubhouse hall allows loud music and how many people fit?", "label": "venue_inquiry", "split": "test"}
+{"text": "Hello, we need to find a hall in Belagavi for a housewarming function, seating for 150, and it should have a vegetarian-only kitchen.", "label": "venue_inquiry", "split": "test"}
+{"text": "Looking at a rustic farm stay in Wayanad for a family reunion of 35 people over a long weekend in August.", "label": "venue_inquiry", "split": "test"}
+{"text": "Which auditoriums in Hyderabad can accommodate a 2000 person college fest closing night?", "label": "venue_inquiry", "split": "test"}
+{"text": "Seeking an elegant venue for an engagement, 90 guests, central Kolkata. Kindly revert with available dates in January.", "label": "venue_inquiry", "split": "test"}
+{"text": "venue for a sangeet in Delhi? around 300 people, need dance floor and stage", "label": "venue_inquiry", "split": "test"}
+{"text": "Can you tell me if there are any hill station resorts in Ooty that can host a 3-day corporate offsite for 50 employees in the first week of June?", "label": "venue_inquiry", "split": "test"}
+{"text": "hall available 14th?", "label": "venue_inquiry", "split": "hard"}
+{"text": "Venue first please. Catering and DJ we can sort later, right now I only need halls for 300 people in Indore.", "label": "venue_inquiry", "split": "hard"}
+{"text": "Rooftops in Bandra?", "label": "venue_inquiry", "split": "hard"}
+{"text": "Is the hall big enough for cake cutting, a stage and dining all at once? How many chairs actually fit inside?", "label": "venue_inquiry", "split": "hard"}
+{"text": "Mainly need to know if that lakeview resort has its lawn free on 6 Dec, also wondering if they do veg food, but lawn date is the priority.", "label": "venue_inquiry", "split": "hard"}
+{"text": "We need veg and non-veg catering for 250 guests at a wedding lunch in Mysuru. Can you share sample menus?", "label": "catering_request", "split": "train"}
+{"text": "Can you suggest a south Indian buffet menu for 150 people, dinner on 20 Dec? Idli to payasam, full spread.", "label": "catering_request", "split": "train"}
+{"text": "Looking for a caterer who can do jain food for a housewarming of 60 people.", "label": "catering_request", "split": "train"}
+{"text": "Do you arrange a live chaat counter and a dosa station? Birthday party, 80 guests, Pune.", "label": "catering_request", "split": "train"}
+{"text": "need a bar setup for corporate party in goa, beer wine and cocktails, 100 pax, with bartenders", "label": "catering_request", "split": "train"}
+{"text": "Our guest list has several people with gluten allergy and two with nut allergy. How will the caterers handle that?", "label": "catering_request", "split": "train"}
+{"text": "Please arrange breakfast, lunch and evening snacks for a two-day offsite of 45 people near Coorg.", "label": "catering_request", "split": "train"}
+{"text": "Can we get a Kerala sadya on banana leaf for 200 people at our wedding in Kochi? Need a caterer that does it properly.", "label": "catering_request", "split": "train"}
+{"text": "Hi, planning a baby shower and need a dessert table with cupcakes and a custom cake. Who can supply?", "label": "catering_request", "split": "train"}
+{"text": "Menu suggestions for an engagement dinner please. Mostly vegetarian guests from Gujarat, some NRIs so a few continental options too.", "label": "catering_request", "split": "train"}
+{"text": "we want unlimited mocktails and live pasta counter for a college fest after party", "label": "catering_request", "split": "train"}
+{"text": "Kindly send your catering menu for a 500-pax wedding reception, including starters, main course and desserts, in Hyderabad.", "label": "catering_request", "split": "train"}
+{"text": "Is it possible to bring our own cook for the haldi ceremony or do your caterers have to do everything?", "label": "catering_request", "split": "train"}
+{"text": "Need a high tea service at a conference in Delhi for 300 delegates, twice a day, with coffee and cookies.", "label": "catering_request", "split": "train"}
+{"text": "Can you do a sit-down plated dinner for 40 people? It's our 25th anniversary and we'd like a 4-course meal with wine pairing.", "label": "catering_request", "split": "train"}
+{"text": "Which caterers do you work with in Chennai for pure veg weddings, preferably Brahmin style meals?", "label": "catering_request", "split": "train"}
+{"text": "looking for biryani and kebab live counters for eid get together 120 people bengaluru", "label": "catering_request", "split": "train"}
+{"text": "How much food should we order for 180 guests? Want to avoid wastage, also interested in how you handle leftover food donation.", "label": "catering_request", "split": "train"}
+{"text": "Can the caterer provide halal meat only? Our family function in Kozhikode has 100 guests and everything has to be halal certified.", "label": "catering_request", "split": "train"}
+{"text": "Street food theme for a product launch! Pani puri, vada pav, jalebi. Around 200 people. Can you arrange?", "label": "catering_request", "split": "train"}
+{"text": "We'd like a tasting session before finalising the wedding menu. When can we schedule it?", "label": "catering_request", "split": "train"}
+{"text": "Cocktail party snacks needed for a farewell, finger food and some veg options, about 35 people on Friday evening.", "label": "catering_request", "split": "train"}
+{"text": "Coffee and tea service plus light snacks every hour for a 2 day training program, 70 participants. Is this doable?", "label": "catering_request", "split": "train"}
+{"text": "Do you provide kid-friendly food options like pizza and fries for a children's birthday party? 25 kids and 20 adults.", "label": "catering_request", "split": "train"}
+{"text": "Planning a mehendi lunch, around 90 people, rajasthani thali style. Any catering partner for that in Jaipur?", "label": "catering_request", "split": "train"}
+{"text": "Please add a jain counter and a diabetic-friendly dessert option to the menu we discussed.", "label": "catering_request", "split": "train"}
+{"text": "Our cousin's wedding in Coimbatore needs a full caterer. 800 people, tiffin in the morning and full meals at noon.", "label": "catering_request", "split": "train"}
+{"text": "what are the liquor licence arrangements for a wedding bar, do you handle that along with the bartenders", "label": "catering_request", "split": "train"}
+{"text": "Want to include a live tandoor and a grill station for an outdoor dinner. 75 guests, mild winter evening.", "label": "catering_request", "split": "train"}
+{"text": "Hello! We are looking for a vegan menu for a small yoga retreat lunch with 20 people. Is that something you handle?", "label": "catering_request", "split": "train"}
+{"text": "Could you do a cake only? Just a three-tier fondant cake for a wedding reception of 200, flavours red velvet and pineapple.", "label": "catering_request", "split": "train"}
+{"text": "For the sangeet we want a mix of north indian starters and chinese. Can the caterer do both without too much fuss?", "label": "catering_request", "split": "train"}
+{"text": "packed lunch boxes for 300 people at a sports day, delivery to the ground at 12:30 please", "label": "catering_request", "split": "train"}
+{"text": "How many waiters and service staff does the catering team usually assign for 400 guests?", "label": "catering_request", "split": "train"}
+{"text": "Planning a pre-wedding brunch at a farm in Nashik. Looking for something rustic, like a barbecue, salads, fresh juices.", "label": "catering_request", "split": "train"}
+{"text": "The bride is allergic to seafood so please make sure no cross contamination at the buffet. Which caterers can guarantee that?", "label": "catering_request", "split": "train"}
+{"text": "Can we swap the paneer starter for a mushroom one in the menu you sent yesterday? Rest is fine.", "label": "catering_request", "split": "train"}
+{"text": "I need an ice-cream cart and a chocolate fountain for the reception. Is this part of your food services?", "label": "catering_request", "split": "train"}
+{"text": "Namaste, annadanam for 1000 people at temple event on 5 April. Need a caterer who can handle bulk cooking, simple meal.", "label": "catering_request", "split": "train"}
+{"text": "Any good Goan seafood caterers? Planning a wedding dinner on the beach for 60 guests, fresh fish essential.", "label": "catering_request", "split": "train"}
+{"text": "Do you offer a Punjabi menu with live tandoori counters for a 200 guest wedding in Ludhiana?", "label": "catering_request", "split": "val"}
+{"text": "need snacks and chai for 50 people at our office open house on thursday afternoon", "label": "catering_request", "split": "val"}
+{"text": "Can the caterers handle a Maharashtrian thali lunch for a 70th birthday, 90 guests, in Pune?", "label": "catering_request", "split": "val"}
+{"text": "We're hosting a baby naming ceremony at home. Please suggest a simple vegetarian menu for 40 people.", "label": "catering_request", "split": "val"}
+{"text": "Which is the best option for a continental buffet at a corporate dinner of 120? Open to suggestions on starters.", "label": "catering_request", "split": "val"}
+{"text": "Kindly confirm if you can supply a mobile bar with a mixologist for our rooftop party on 7 Feb.", "label": "catering_request", "split": "val"}
+{"text": "Is eggless cake available? Half the guests at our anniversary dinner are pure vegetarian.", "label": "catering_request", "split": "val"}
+{"text": "Looking for a Mangalorean style fish thali and ghee rice for 150 pax at our wedding reception.", "label": "catering_request", "split": "val"}
+{"text": "Do you also do breakfast for guests staying overnight at the resort? Roughly 80 people, idli dosa poori type.", "label": "catering_request", "split": "val"}
+{"text": "Can I add a live jalebi and rabri counter to the dinner menu we are finalising?", "label": "catering_request", "split": "val"}
+{"text": "Please suggest a menu for a corporate lunch of 100 people in Bengaluru, mix of north and south, and one live counter.", "label": "catering_request", "split": "test"}
+{"text": "Our reception is on 28/02/2027 and we're looking for a caterer for 600 guests, pure veg, Marwari style.", "label": "catering_request", "split": "test"}
+{"text": "can you do a bbq night for 40 people on a farm, with veg and chicken options", "label": "catering_request", "split": "test"}
+{"text": "Hi, we have two guests who are celiac and a few who are lactose intolerant. What can the kitchen prepare for them?", "label": "catering_request", "split": "test"}
+{"text": "Need dessert counters and a coffee bar for a conference gala in Kochi, about 250 delegates.", "label": "catering_request", "split": "test"}
+{"text": "We'd like an Awadhi menu for the engagement dinner. Is a caterer with experience in galouti kebabs and biryani available in Delhi?", "label": "catering_request", "split": "test"}
+{"text": "What kind of drinks packages do you have for a college alumni night? Beer and soft drinks mostly, 150 people.", "label": "catering_request", "split": "test"}
+{"text": "Wanting to hire a caterer for a housewarming in Mangaluru, 80 persons, mostly Udupi style vegetarian.", "label": "catering_request", "split": "test"}
+{"text": "Tea, coffee and sandwiches for a seminar of 60 delegates on Monday morning in Hyderabad, can you supply?", "label": "catering_request", "split": "test"}
+{"text": "Is it okay if we serve a Bengali menu at our wedding, with fish and mishti? We expect 300 guests in Kolkata.", "label": "catering_request", "split": "test"}
+{"text": "party platters for 25 people friday evening, mixed veg and non veg, delivered to hsr layout", "label": "catering_request", "split": "test"}
+{"text": "My father's retirement function needs a banana leaf meal for 120 relatives in Thrissur. Can your caterer take this up?", "label": "catering_request", "split": "test"}
+{"text": "biryani for 50?", "label": "catering_request", "split": "hard"}
+{"text": "Jain food available?", "label": "catering_request", "split": "hard"}
+{"text": "The tasting menu looked amazing but I'm mostly asking whether the live pasta station can be a pasta-only counter and not a combined one, for 100 guests on 3 Jan.", "label": "catering_request", "split": "hard"}
+{"text": "Do you also handle cocktails, mocktails and a juice bar? That's mainly what we need for the wedding, the hall is already booked.", "label": "catering_request", "split": "hard"}
+{"text": "Primary need: fix the dinner menu. Also curious about decor but that can wait. We want paneer, dal makhani, two sabzis, rotis and a dessert for 220.", "label": "catering_request", "split": "hard"}
+{"text": "We want a floral mandap with white roses and orchids for our wedding in Kochi. Can your team design it?", "label": "decor_design", "split": "train"}
+{"text": "Looking for a vintage tea party theme for my daughter's 8th birthday, around 25 kids. Ideas?", "label": "decor_design", "split": "train"}
+{"text": "Can you show me stage design options for a product launch? We want a big LED backdrop with our brand colours.", "label": "decor_design", "split": "train"}
+{"text": "need balloon arch and backdrop for baby shower, pastel pink and gold, 30 guests", "label": "decor_design", "split": "train"}
+{"text": "What themes do you suggest for a 40th birthday party? We like Great Gatsby or something retro.", "label": "decor_design", "split": "train"}
+{"text": "Please share photos of your haldi decorations, we want marigold and lots of yellow drapes.", "label": "decor_design", "split": "train"}
+{"text": "We'd like fairy lights and lanterns all over the garden for an evening engagement. Can you style that?", "label": "decor_design", "split": "train"}
+{"text": "Could you do an entire Bollywood themed set up for our college fest, with entrance arch, photo booths and neon signs?", "label": "decor_design", "split": "train"}
+{"text": "Interested in your floral decor packages for a housewarming puja. Simple, traditional, banana leaves and flowers at the entrance.", "label": "decor_design", "split": "train"}
+{"text": "Our reception stage should look like a royal palace. Think velvet, chandeliers and gold, what can you create?", "label": "decor_design", "split": "train"}
+{"text": "How do you design lighting for a conference stage so it looks good on camera as well as in the hall?", "label": "decor_design", "split": "train"}
+{"text": "Do you provide table centrepieces and linen for 25 tables? We want a rustic wooden and greenery look.", "label": "decor_design", "split": "train"}
+{"text": "plan a jungle safari theme for a first birthday, with animal cut outs and props please", "label": "decor_design", "split": "train"}
+{"text": "Can the mehendi setup have low seating, cushions, and hanging jhoomars? Boho style, around 60 guests.", "label": "decor_design", "split": "train"}
+{"text": "Hello, I want to book decor for a corporate awards night. Black and gold, with a red carpet entrance and a stage.", "label": "decor_design", "split": "train"}
+{"text": "We are doing a sangeet and want a mirror-work and pichwai inspired stage, any designers who can handle this?", "label": "decor_design", "split": "train"}
+{"text": "Looking for a ceiling draping and floral installation that can be hung over the dance floor. Is it possible indoors?", "label": "decor_design", "split": "train"}
+{"text": "Please show me some anniversary decor ideas for a 25th, silver theme, small dinner at home.", "label": "decor_design", "split": "train"}
+{"text": "wedding entrance with a flower tunnel and a photo wall, want to know what you can do in a budget range of 1 lakh", "label": "decor_design", "split": "train"}
+{"text": "The theme for our farewell party is 90s nostalgia. Can you put together props, posters and a backdrop?", "label": "decor_design", "split": "train"}
+{"text": "Can we use only eco-friendly decor, like no plastic and no thermocol, for our outdoor wedding? Paper, jute, real flowers.", "label": "decor_design", "split": "train"}
+{"text": "We want a nautical theme baby shower with blue and white balloons and little boat props. Please help us design it.", "label": "decor_design", "split": "train"}
+{"text": "Do you do car decoration for the bride and groom's exit? Flowers and ribbons on a vintage car.", "label": "decor_design", "split": "train"}
+{"text": "Thinking of a kerala style decor with brass lamps, kasavu cloth and lots of jasmine for the wedding hall. Can you manage?", "label": "decor_design", "split": "train"}
+{"text": "Show me your lighting designs for an outdoor sundowner event, mood lighting with spotlights on the trees.", "label": "decor_design", "split": "train"}
+{"text": "My son's birthday is Spiderman themed. I need cake table decor, balloon pillars and a standee.", "label": "decor_design", "split": "train"}
+{"text": "Need a floral swing and a photo corner for the engagement, soft peach colours.", "label": "decor_design", "split": "train"}
+{"text": "The venue is quite plain. How can we make it look more festive for Diwali office party with rangoli, diyas and lights?", "label": "decor_design", "split": "train"}
+{"text": "Please design a modern minimalist stage with just greenery and a neon sign for our wedding reception.", "label": "decor_design", "split": "train"}
+{"text": "Can your decorators do a pool-side setup with floating candles and flowers for a night event?", "label": "decor_design", "split": "train"}
+{"text": "We need a mandap in a South Indian style for 12 Dec, with banana trees, kalash and mango leaf toran.", "label": "decor_design", "split": "train"}
+{"text": "Ideas for a tropical themed corporate party in Goa, palm leaves, tiki bar and lights, 150 guests.", "label": "decor_design", "split": "train"}
+{"text": "can u do a cradle ceremony decor for naming function pls, light yellow and white theme", "label": "decor_design", "split": "train"}
+{"text": "Is a 360 degree LED screen setup something you offer for exhibitions? We want a stage with a premium look.", "label": "decor_design", "split": "train"}
+{"text": "Need centerpieces, welcome signage and name boards for a corporate conference. Clean and professional design.", "label": "decor_design", "split": "train"}
+{"text": "Planning a Rajasthani themed sangeet in Pune with puppets, folk props and colourful umbrellas. Could you style the venue?", "label": "decor_design", "split": "train"}
+{"text": "We'd love a dreamy pastel balloon garland over the entrance and a cake backdrop for the baby's 1st birthday.", "label": "decor_design", "split": "train"}
+{"text": "What flowers are in season for a December wedding? I want to plan the decor around that and need your advice on colour combos.", "label": "decor_design", "split": "train"}
+{"text": "Can the stage have a revolving platform and smoke effects for the launch reveal? Please advise on design.", "label": "decor_design", "split": "train"}
+{"text": "Could you suggest a colour scheme and flowers for a summer afternoon wedding? We want it to feel fresh and bright, not heavy.", "label": "decor_design", "split": "train"}
+{"text": "Can you decorate a Ganesh Chaturthi pandal with eco-friendly materials? About 20 feet wide stage.", "label": "decor_design", "split": "val"}
+{"text": "We want a bohemian theme for our beach wedding in Goa with pampas grass and macrame.", "label": "decor_design", "split": "val"}
+{"text": "need red and white rose decor for anniversary dinner at home, simple setup, bengaluru", "label": "decor_design", "split": "val"}
+{"text": "Please send some decor concepts for a graduation party, 60 people, maroon and gold.", "label": "decor_design", "split": "val"}
+{"text": "Do you design cartoon-themed birthday backdrops? Looking for Peppa Pig style for a 3 year old.", "label": "decor_design", "split": "val"}
+{"text": "We'd like pink and white lighting with a floral stage for the engagement ceremony on 2 March.", "label": "decor_design", "split": "val"}
+{"text": "Could you set up the gate and entrance with banana stems and coconut leaves for a housewarming?", "label": "decor_design", "split": "val"}
+{"text": "looking for a stage backdrop with 3D lettering and neon strip lights for a college cultural night", "label": "decor_design", "split": "val"}
+{"text": "Our wedding colour palette is sage green, ivory and gold. How would you style the tables and the mandap together?", "label": "decor_design", "split": "val"}
+{"text": "Do you do flower rain or petal shower arrangements for the bride's entry?", "label": "decor_design", "split": "val"}
+{"text": "Hi, we want a classic white and gold wedding decor, with draped ceiling and crystal chandeliers, for 300 guests.", "label": "decor_design", "split": "test"}
+{"text": "Can you make a space-themed stage for a school science fest? Planets, stars and glowing lights.", "label": "decor_design", "split": "test"}
+{"text": "need mogra garlands and flower jewellery for bride, plus decor for the stage, in Chennai", "label": "decor_design", "split": "test"}
+{"text": "What decor can you do for a tiny rooftop engagement with 20 guests? We love fairy lights and potted plants.", "label": "decor_design", "split": "test"}
+{"text": "Please advise on a theme for our company's tenth anniversary celebration, we would like something elegant yet fun.", "label": "decor_design", "split": "test"}
+{"text": "Interested in a mandap with temple pillars and lots of hanging lamps. Is that achievable for an indoor hall?", "label": "decor_design", "split": "test"}
+{"text": "Photobooth with props and a flower wall for the bridal shower, Hyderabad, next Saturday afternoon.", "label": "decor_design", "split": "test"}
+{"text": "The baby shower must be a boy theme, with teddy bears and blue clouds. Can you arrange the balloons and backdrop?", "label": "decor_design", "split": "test"}
+{"text": "Would you be able to do a vibrant Mexican fiesta decor for the farewell party with papel picado and cacti props?", "label": "decor_design", "split": "test"}
+{"text": "Looking for table settings and floral arrangements for a formal dinner party with 14 seats, home setting.", "label": "decor_design", "split": "test"}
+{"text": "can we get uplighters in purple and a gobo with our logo on the wall, for the product reveal", "label": "decor_design", "split": "test"}
+{"text": "My parents' 50th anniversary needs a golden theme with a photo timeline wall of their journey. Can you do the styling?", "label": "decor_design", "split": "test"}
+{"text": "Balloon decor?", "label": "decor_design", "split": "hard"}
+{"text": "Stage lights ideas?", "label": "decor_design", "split": "hard"}
+{"text": "Mostly asking about decor ideas, since I know the date is 12 Dec and the hall is booked. Which colours go well with a peacock themed mandap?", "label": "decor_design", "split": "hard"}
+{"text": "Can the florist do jasmine strings for the car, plus the entry arch? No need for DJ or anything else, just the floral parts.", "label": "decor_design", "split": "hard"}
+{"text": "The previous event's setup looked cheap, so this time I want a premium look with drapes and chandeliers. What styles would you propose?", "label": "decor_design", "split": "hard"}
+{"text": "Can you book a DJ for a sangeet night in Pune on 20 Feb? About 200 guests and mostly Bollywood.", "label": "entertainment_booking", "split": "train"}
+{"text": "We need a live band for our corporate annual day, something that plays classic rock and some Hindi hits.", "label": "entertainment_booking", "split": "train"}
+{"text": "looking for a magician for kids birthday, 25 children, 1 hour show, saturday afternoon", "label": "entertainment_booking", "split": "train"}
+{"text": "Please suggest a singer who can perform ghazals at an anniversary dinner of 60 people in Delhi.", "label": "entertainment_booking", "split": "train"}
+{"text": "Do you have a good anchor or MC who can host a wedding reception in both English and Kannada?", "label": "entertainment_booking", "split": "train"}
+{"text": "We want a Kathak or classical dance performance as the opening of our cultural evening in Chennai.", "label": "entertainment_booking", "split": "train"}
+{"text": "Need a stand-up comedian for a company offsite, clean humour only, 90 minutes, 120 employees.", "label": "entertainment_booking", "split": "train"}
+{"text": "Can we book a chenda melam team for the baraat in Thrissur? Around 15 drummers.", "label": "entertainment_booking", "split": "train"}
+{"text": "Hoping to find a DJ with good lights and a dance floor for a college fest after party, 800 students.", "label": "entertainment_booking", "split": "train"}
+{"text": "Our farewell party needs a few fun games and a quiz host. Any team that does corporate team building activities for 50 people?", "label": "entertainment_booking", "split": "train"}
+{"text": "Could you arrange a Bollywood dance troupe for the sangeet performance? Four dancers, five songs, Mumbai.", "label": "entertainment_booking", "split": "train"}
+{"text": "A live Carnatic instrumental duo for a housewarming in Bengaluru, maybe a violin and mridangam. Is that possible?", "label": "entertainment_booking", "split": "train"}
+{"text": "Looking for a bartender who flairs and a DJ for a rooftop cocktail party on 8 Nov, around 100 guests.", "label": "entertainment_booking", "split": "train"}
+{"text": "Are there any tribute bands in Goa that can play Beatles and Eagles for a wedding reception?", "label": "entertainment_booking", "split": "train"}
+{"text": "Hi! Need a clown and face painter plus balloon twisting at my son's 5th birthday. 30 kids at home.", "label": "entertainment_booking", "split": "train"}
+{"text": "Wedding band in Kochi with a singer and keyboard? We want malayalam film songs and some old Hindi classics.", "label": "entertainment_booking", "split": "train"}
+{"text": "Which DJs are available on 12/12/2026 in Hyderabad for a 4 hour set? We prefer someone who plays Telugu and Hindi hits.", "label": "entertainment_booking", "split": "train"}
+{"text": "We want a dhol player and a few bhangra dancers to welcome the groom's side. Can you get them?", "label": "entertainment_booking", "split": "train"}
+{"text": "karaoke setup with a host for our ladies kitty party at a hotel in Jaipur, 40 ladies", "label": "entertainment_booking", "split": "train"}
+{"text": "Can your entertainment team do a Bollywood-style flash mob for our company's product launch?", "label": "entertainment_booking", "split": "train"}
+{"text": "Are there any mentalists or mind readers you can book for a corporate gala dinner of 200?", "label": "entertainment_booking", "split": "train"}
+{"text": "We'd like a sufi night with qawwali singers for our engagement ceremony. Is that something you can organise?", "label": "entertainment_booking", "split": "train"}
+{"text": "Is there a puppet show or storyteller for a baby's naming ceremony, mostly little kids and grandparents?", "label": "entertainment_booking", "split": "train"}
+{"text": "booking enquiry for a fire dancer or LED performance at a beach party in Goa", "label": "entertainment_booking", "split": "train"}
+{"text": "Need a bagpipe and brass band for a baraat on the 14th of April, procession will last 2 hours.", "label": "entertainment_booking", "split": "train"}
+{"text": "Looking for anchors and dancers for a college fest, along with a live band for the closing night. Please suggest names.", "label": "entertainment_booking", "split": "train"}
+{"text": "Could you recommend a violinist for the wedding ceremony, entry music and the vows? Indoor setting, 100 guests.", "label": "entertainment_booking", "split": "train"}
+{"text": "We'd like a treasure hunt and some tambola for a family get-together of about 60, kids and elders both.", "label": "entertainment_booking", "split": "train"}
+{"text": "Music for a silent disco? We'd love one for the office Christmas party, headphones and DJ included.", "label": "entertainment_booking", "split": "train"}
+{"text": "Can we have a Yakshagana or folk dance performance at our resort wedding near Udupi?", "label": "entertainment_booking", "split": "train"}
+{"text": "Our company awards night needs a professional emcee and a dance act. Budget is not an issue.", "label": "entertainment_booking", "split": "train"}
+{"text": "DJ and a sound system for a house party on Saturday, 40 friends, mostly EDM and house.", "label": "entertainment_booking", "split": "train"}
+{"text": "Who can do a magic show and balloon sculptures for kids at a corporate family day?", "label": "entertainment_booking", "split": "train"}
+{"text": "Hello, looking for a female singer with a small acoustic band for a cafe launch event next weekend.", "label": "entertainment_booking", "split": "train"}
+{"text": "Please arrange a mimicry artist or a standup act for the retirement function. Mostly older audience, so no adult jokes.", "label": "entertainment_booking", "split": "train"}
+{"text": "We need dandiya DJ and a dhol team for a navratri event with 500 people in Ahmedabad.", "label": "entertainment_booking", "split": "train"}
+{"text": "Any Instagram-famous or celebrity performers available for a college fest in Mysuru? Our team wants a live singer for the headline act.", "label": "entertainment_booking", "split": "train"}
+{"text": "Need an anchor for engagement who can handle fun games like ring hunt, couple quiz and so on.", "label": "entertainment_booking", "split": "train"}
+{"text": "Can I book a bharatanatyam dancer for the inauguration? Only about 15 minutes of performance, Kochi, 3rd Dec.", "label": "entertainment_booking", "split": "train"}
+{"text": "Is a live ghazal evening with tabla and harmonium possible for our 10th anniversary? Small hall, about 50 guests, evening of 6 Dec.", "label": "entertainment_booking", "split": "train"}
+{"text": "DJ for new years eve party, 150 people, in a Bengaluru brewery. Which DJs can you offer?", "label": "entertainment_booking", "split": "val"}
+{"text": "Do you have Western bands that perform for weddings? We want covers of Coldplay and Ed Sheeran.", "label": "entertainment_booking", "split": "val"}
+{"text": "need an MC for a product launch, english and hindi, 45 minutes of hosting", "label": "entertainment_booking", "split": "val"}
+{"text": "Looking at hiring a Rajasthani folk troupe with puppet show and kalbelia dancers for a destination wedding in Udaipur.", "label": "entertainment_booking", "split": "val"}
+{"text": "Could you please send profiles of a few singers for an engagement function? Preferably someone who sings Tamil melodies.", "label": "entertainment_booking", "split": "val"}
+{"text": "We want caricature artists and a games zone for the school annual day. Is that something your company does?", "label": "entertainment_booking", "split": "val"}
+{"text": "A DJ plus a live saxophonist for our cocktail night in Dubai, can you do that?", "label": "entertainment_booking", "split": "val"}
+{"text": "Please book two dancers for the wedding sangeet in Lucknow on 27th November.", "label": "entertainment_booking", "split": "val"}
+{"text": "Are there any magic shows for adults? Corporate dinner in Chennai, 80 pax.", "label": "entertainment_booking", "split": "val"}
+{"text": "We would love a band that does Kannada and Hindi retro songs for my parents' 40th anniversary.", "label": "entertainment_booking", "split": "val"}
+{"text": "Can you get a DJ and a pair of anchors for a college farewell in Mangaluru on 14 March?", "label": "entertainment_booking", "split": "test"}
+{"text": "Need entertainers for a kids carnival: jugglers, face painting, bouncy games, 60 children.", "label": "entertainment_booking", "split": "test"}
+{"text": "Looking for a bagpipe and nadaswaram combo for wedding procession, Madurai, 28 January.", "label": "entertainment_booking", "split": "test"}
+{"text": "Suggest a singer for a corporate dinner, soft jazz or bossa nova style, 70 pax, Mumbai.", "label": "entertainment_booking", "split": "test"}
+{"text": "We want a stand up or sketch comedy group to perform at the annual day. How do we book them?", "label": "entertainment_booking", "split": "test"}
+{"text": "DJ with a lighting rig for a 21st birthday bash, around 100 friends and cousins, Delhi, next Friday night.", "label": "entertainment_booking", "split": "test"}
+{"text": "Can a dhol group lead the groom's entry and then play for the dance? We want high energy for around 20 minutes.", "label": "entertainment_booking", "split": "test"}
+{"text": "Need housie and fun games host for a society's Diwali get-together, 150 residents.", "label": "entertainment_booking", "split": "test"}
+{"text": "Hi, I'm hunting for a live band for a beach wedding, acoustic guitar and vocalist, soft songs for the ceremony and party songs later.", "label": "entertainment_booking", "split": "test"}
+{"text": "Any option for a stage show with a celebrity singer for a charity gala? 600 attendees expected.", "label": "entertainment_booking", "split": "test"}
+{"text": "tabla and sitar players for a small baby shower at home pune?", "label": "entertainment_booking", "split": "test"}
+{"text": "Looking to hire a mascot and a photo-op character for our store's grand opening on 9 Dec.", "label": "entertainment_booking", "split": "test"}
+{"text": "DJ for friday?", "label": "entertainment_booking", "split": "hard"}
+{"text": "Need a magician", "label": "entertainment_booking", "split": "hard"}
+{"text": "Two things: lights for the dance floor or even just a speaker would help, but mostly I want to know which live singers you can send for the engagement.", "label": "entertainment_booking", "split": "hard"}
+{"text": "Is the band available on the 22nd? The venue and food are already fixed, only the music is pending.", "label": "entertainment_booking", "split": "hard"}
+{"text": "Can the anchor also do the games for kids and keep the guests entertained during the long photo session?", "label": "entertainment_booking", "split": "hard"}
+{"text": "We need a photographer and videographer for a two-day wedding in Mysuru, 15 and 16 Jan. Candid style preferred.", "label": "photo_video", "split": "train"}
+{"text": "Can you arrange a drone for aerial shots of the resort wedding in Coorg?", "label": "photo_video", "split": "train"}
+{"text": "looking for a photographer for baby's 1st birthday at home, 2 hours, bangalore", "label": "photo_video", "split": "train"}
+{"text": "Please share your portfolio of pre-wedding shoots. We are thinking of Hampi or Gokarna as location.", "label": "photo_video", "split": "train"}
+{"text": "Do you offer live streaming for a conference? About 300 people in the hall and another 500 online.", "label": "photo_video", "split": "train"}
+{"text": "I want a cinematic wedding film of around 5 minutes plus a full-length edited video of the ceremony.", "label": "photo_video", "split": "train"}
+{"text": "What's included in the album? Number of pages and prints, and whether we can choose the photos ourselves.", "label": "photo_video", "split": "train"}
+{"text": "Need a team for a corporate event coverage, photos plus a 2 minute highlight reel for social media, product launch in Gurgaon on 3 Nov.", "label": "photo_video", "split": "train"}
+{"text": "Can we get a photo booth with instant prints for the college farewell night? Around 200 students.", "label": "photo_video", "split": "train"}
+{"text": "Looking for a maternity and baby shower photographer in Kochi, indoor event on a Sunday with 40 guests.", "label": "photo_video", "split": "train"}
+{"text": "The bride wants a female photographer for the haldi and mehendi. Do you have any available on 18 and 19 Feb?", "label": "photo_video", "split": "train"}
+{"text": "Hello, kindly arrange a videographer for our anniversary party, 80 guests, and edit a short video with old family photos.", "label": "photo_video", "split": "train"}
+{"text": "Do you provide same-day edit videos that can play at the reception?", "label": "photo_video", "split": "train"}
+{"text": "We want a Reels-style short video from our engagement function that we can put on Instagram. How long does it take to deliver?", "label": "photo_video", "split": "train"}
+{"text": "Is it possible to get all the raw photos on a pendrive or Google Drive link after the wedding?", "label": "photo_video", "split": "train"}
+{"text": "Seeking a candid photographer who can shoot a destination wedding in Goa, travel and stay will be taken care of by us.", "label": "photo_video", "split": "train"}
+{"text": "Our conference needs two photographers and one video person for the main hall and the breakout rooms.", "label": "photo_video", "split": "train"}
+{"text": "How many hours of coverage come with the standard photography option? Our ceremony is likely to last 6 hours.", "label": "photo_video", "split": "train"}
+{"text": "Can you cover a housewarming with just a photographer for the puja and the lunch? No video needed.", "label": "photo_video", "split": "train"}
+{"text": "Interested in 360 degree video booth and a slow motion booth for the cocktail party in Hyderabad.", "label": "photo_video", "split": "train"}
+{"text": "Please can the photographer also click family group photos in the morning before the guests arrive? We have a long list of combinations.", "label": "photo_video", "split": "train"}
+{"text": "I'm after a time-lapse video of the stage setup and the event, plus a normal photo coverage for the day.", "label": "photo_video", "split": "train"}
+{"text": "Any photographers who specialise in kids birthday shoots? Looking for fun, natural shots, not posed.", "label": "photo_video", "split": "train"}
+{"text": "Need a pro to shoot 2 minute video testimonials from attendees at our product demo day, plus event photos.", "label": "photo_video", "split": "train"}
+{"text": "wedding teaser and highlight video, delivery before the 5th of January, can you do that?", "label": "photo_video", "split": "train"}
+{"text": "Looking for a photo journalist style coverage for a sports day with about 400 kids. Several photographers needed.", "label": "photo_video", "split": "train"}
+{"text": "We want to hire a videographer for the baraat procession with a drone and a gimbal. Date is 28/11/2026.", "label": "photo_video", "split": "train"}
+{"text": "Does the photo package include retouching? We would like skin smoothing and colour correction on at least 100 selected pictures.", "label": "photo_video", "split": "train"}
+{"text": "Our engagement is on a houseboat so we need a photographer who can handle low light and moving shots.", "label": "photo_video", "split": "train"}
+{"text": "Will the live stream cover the ceremony for relatives abroad? Need a link that can be shared on WhatsApp.", "label": "photo_video", "split": "train"}
+{"text": "can i see sample albums, i prefer the coffee table book style with a leather cover", "label": "photo_video", "split": "train"}
+{"text": "Please quote for a drone only. We have a small farm wedding and just want some beautiful top shots.", "label": "photo_video", "split": "train"}
+{"text": "Hi, I would like to book a photographer for a farewell party and also a polaroid corner.", "label": "photo_video", "split": "train"}
+{"text": "A short documentary film of our company's ten year journey, with interviews and event coverage. Is this something your team makes?", "label": "photo_video", "split": "train"}
+{"text": "We need a team shooting the sangeet with multiple cameras and a LED wall display. Is that part of your video service?", "label": "photo_video", "split": "train"}
+{"text": "Do your photographers wear formal clothes or plain black? It's a corporate dinner and the dress code is strict.", "label": "photo_video", "split": "train"}
+{"text": "any chance of getting parents album duplicates? we would like two extra mini albums for both families", "label": "photo_video", "split": "train"}
+{"text": "We are looking for a portrait photographer for an anniversary couple shoot in a heritage place in Jaipur.", "label": "photo_video", "split": "train"}
+{"text": "Please let me know about video editing time. We want the final wedding film within 30 days of the wedding date.", "label": "photo_video", "split": "train"}
+{"text": "Can the videographer shoot vertical clips for Instagram stories during the event, and send them the same night?", "label": "photo_video", "split": "train"}
+{"text": "Candid photographer for a small engagement in Pune, 3 hours, on 22 Dec. Please share rates and sample work.", "label": "photo_video", "split": "val"}
+{"text": "Do you provide a drone license holder? Venue needs permission for aerial shoots.", "label": "photo_video", "split": "val"}
+{"text": "need a videographer for our college fest, 2 days, both stage and crowd shots", "label": "photo_video", "split": "val"}
+{"text": "I'd like a wedding photography package with an album and a pre-wedding shoot included. Date is flexible.", "label": "photo_video", "split": "val"}
+{"text": "Please arrange professional photographs for a corporate award ceremony, with the winners getting a picture on stage.", "label": "photo_video", "split": "val"}
+{"text": "Can you do live video streaming on YouTube for our daughter's engagement? Many family members are in the US.", "label": "photo_video", "split": "val"}
+{"text": "Looking for a candid photographer who is comfortable shooting in Kannada or Telugu weddings with all the rituals.", "label": "photo_video", "split": "val"}
+{"text": "photo and video for a baby shower in Delhi, 2 pm to 6 pm next Sunday", "label": "photo_video", "split": "val"}
+{"text": "Could you make a photo book from an event we did last month? Photos are available but need design and print.", "label": "photo_video", "split": "val"}
+{"text": "We'd like a same day photo delivery for the product launch, about 20 edited images in 2 hours for the press.", "label": "photo_video", "split": "val"}
+{"text": "Hi, we want a photographer and a cinematographer for a destination wedding in Jaisalmer, three days.", "label": "photo_video", "split": "test"}
+{"text": "looking for aerial drone photography for a resort opening event on 4th April", "label": "photo_video", "split": "test"}
+{"text": "How soon will we receive the wedding film after the shoot? We want it before our families' visit.", "label": "photo_video", "split": "test"}
+{"text": "Need an album designer, we've got photos from the photographers already but need a layout and print.", "label": "photo_video", "split": "test"}
+{"text": "Please arrange photography for a 60th birthday with 70 guests. A few family portraits and candid pictures are what we want.", "label": "photo_video", "split": "test"}
+{"text": "Can you set up a live webcast of our conference with multi-camera switching and audio feeds?", "label": "photo_video", "split": "test"}
+{"text": "I'd love a cinematic reel with trending music, for my brother's wedding. Can that be done within a week?", "label": "photo_video", "split": "test"}
+{"text": "Do you have photographers who can do newborn and baby shower shoots at the venue? Chennai, next month.", "label": "photo_video", "split": "test"}
+{"text": "Please book a videographer for the haldi and mehendi. Only video, no photography as we already have a photographer.", "label": "photo_video", "split": "test"}
+{"text": "We need event photos for our company website, around 150 attendees, sales summit in Mumbai on 10 Dec.", "label": "photo_video", "split": "test"}
+{"text": "can the photographer stay till the dinner? we need coverage from 4pm till midnight", "label": "photo_video", "split": "test"}
+{"text": "A time slot for the pre wedding shoot in Munnar, the 3rd weekend of October, and info about what outfits and props are needed.", "label": "photo_video", "split": "test"}
+{"text": "Photographer available?", "label": "photo_video", "split": "hard"}
+{"text": "Need reel + shots.", "label": "photo_video", "split": "hard"}
+{"text": "Mostly I need someone to film everything but I'm also wondering if your team can take care of the wedding stage lighting, since the video quality depends on it.", "label": "photo_video", "split": "hard"}
+{"text": "Do you do drone clips? The resort is already done and we only need the sky-view.", "label": "photo_video", "split": "hard"}
+{"text": "The photos from my sister's wedding were beautiful, can I get her album reprinted and a second copy sent to Dubai?", "label": "photo_video", "split": "hard"}
+{"text": "We need to book 40 hotel rooms for out-of-town guests for the wedding on 12 Dec in Mysuru. Can you manage that?", "label": "guest_logistics", "split": "train"}
+{"text": "Can you design and print the wedding invitation cards? We'd like a traditional red and gold card in English and Tamil.", "label": "guest_logistics", "split": "train"}
+{"text": "Please set up airport pickups for guests arriving at Bengaluru airport on 10th Jan. About 25 people in total.", "label": "guest_logistics", "split": "train"}
+{"text": "how do we track RSVPs for 300 guests? is there an online form or something", "label": "guest_logistics", "split": "train"}
+{"text": "Need buses to take guests from the hotel to the wedding venue and back, 120 people, two trips.", "label": "guest_logistics", "split": "train"}
+{"text": "We'd like a digital invitation video to send on WhatsApp for the housewarming. Do you make those?", "label": "guest_logistics", "split": "train"}
+{"text": "Can you plan the seating chart for 250 guests with families grouped by table? Some feuding relatives need to be kept apart.", "label": "guest_logistics", "split": "train"}
+{"text": "Do you handle valet and car parking? Expecting around 150 cars at the reception in Hyderabad.", "label": "guest_logistics", "split": "train"}
+{"text": "I want to arrange a welcome kit for guests arriving from abroad, with a local map, snacks and a small gift. Can you do that?", "label": "guest_logistics", "split": "train"}
+{"text": "Looking for hotel blocks near the venue for 60 guests, budget friendly, check-in on Friday and checkout on Sunday.", "label": "guest_logistics", "split": "train"}
+{"text": "Who will send invites and follow up with guests that haven't replied? We have a list of 400 names in Excel.", "label": "guest_logistics", "split": "train"}
+{"text": "Need two tempo travellers for local sightseeing for the groom's side guests on the day after wedding in Jaipur.", "label": "guest_logistics", "split": "train"}
+{"text": "please help us with guest list management for our conference, registration desk and name badges for 500 delegates", "label": "guest_logistics", "split": "train"}
+{"text": "Is it possible to get wheelchair access and a pick-up for elderly relatives at the reception? About 8 senior guests.", "label": "guest_logistics", "split": "train"}
+{"text": "We are expecting guests from Dubai, UK and Australia. Please arrange visa invitation letters and airport transfers as needed.", "label": "guest_logistics", "split": "train"}
+{"text": "Do you have a service where guests can scan a QR code at entry to confirm attendance? Corporate dinner with 200 people.", "label": "guest_logistics", "split": "train"}
+{"text": "Can you help us decide the seating arrangement, banquet round tables or theatre style, for a 180-pax conference lunch?", "label": "guest_logistics", "split": "train"}
+{"text": "Our guests will come by train to Kochi on 20 Nov. Can someone receive them at the railway station and take them to the hotel?", "label": "guest_logistics", "split": "train"}
+{"text": "Shuttle service for guests between two hotels and the beach venue in Goa on 14 and 15 Feb. Is it available?", "label": "guest_logistics", "split": "train"}
+{"text": "Need printed invitations plus return gifts for 100 guests, baby shower, delivery to Pune by the 5th.", "label": "guest_logistics", "split": "train"}
+{"text": "What's the process for room allocation at the resort for family guests? We have 22 rooms booked and 70 people coming.", "label": "guest_logistics", "split": "train"}
+{"text": "Please arrange a bus from Chennai to the wedding hall in Pondicherry for 45 guests, depart at 6 in the morning.", "label": "guest_logistics", "split": "train"}
+{"text": "Can you add a marathi line and a map location to the e-invite we are sending and also set up a reminder message the week before?", "label": "guest_logistics", "split": "train"}
+{"text": "Parking arrangements for 80 cars at a farmhouse event outside Bengaluru. We need signboards and people to guide the cars.", "label": "guest_logistics", "split": "train"}
+{"text": "we need name cards for the tables and a welcome board. also a guest book for the engagement", "label": "guest_logistics", "split": "train"}
+{"text": "Can the guests who cannot attend be shown on a list and the remaining receive the dress code and timing details?", "label": "guest_logistics", "split": "train"}
+{"text": "Please book flights for 10 key guests from Delhi to Kochi. We will share their details and need a coordinator for them.", "label": "guest_logistics", "split": "train"}
+{"text": "help with cab bookings for 30 attendees from the airport to the offsite resort, arrivals between 9 am and 2 pm on 6th March", "label": "guest_logistics", "split": "train"}
+{"text": "Can you share which hotels are the best for guest stay near the Udaipur wedding venue? We have 50 guests coming for 3 nights.", "label": "guest_logistics", "split": "train"}
+{"text": "Do you coordinate the seating for the VIP guests and arrange a separate entry? Product launch with some senior officials.", "label": "guest_logistics", "split": "train"}
+{"text": "The invitation should be an animated one with our photos and music. Please share some samples and timelines.", "label": "guest_logistics", "split": "train"}
+{"text": "Could someone coordinate the arrival of relatives at the hotel and make sure they get breakfast tokens and room keys on time?", "label": "guest_logistics", "split": "train"}
+{"text": "I'd like an RSVP page on a website with meal preferences, like veg or non-veg, so I can pass numbers to the caterer.", "label": "guest_logistics", "split": "train"}
+{"text": "What about transport for guests after the reception ends at midnight? We want to avoid people driving back late.", "label": "guest_logistics", "split": "train"}
+{"text": "Can you take care of the lunch boxes and a bus for the college trip participants, 90 students, leaving from campus at 7 am?", "label": "guest_logistics", "split": "train"}
+{"text": "The groom's family is arriving in two batches by flight. Please arrange rooms and pick-up at different times.", "label": "guest_logistics", "split": "train"}
+{"text": "Please assist with guest registration and a seating plan for the alumni dinner, we expect 220 attendees.", "label": "guest_logistics", "split": "train"}
+{"text": "Our relatives from Kerala need a place to stay for 2 nights near the Pune hall. Can you recommend a couple of budget hotels and book them?", "label": "guest_logistics", "split": "train"}
+{"text": "Need a hospitality desk at the venue entrance to welcome people with tilak and garlands. Can you provide staff for that?", "label": "guest_logistics", "split": "train"}
+{"text": "Can your team collect the guest list from our family and call everybody to confirm their travel dates before we book rooms?", "label": "guest_logistics", "split": "train"}
+{"text": "Could you arrange pick-up from the Mangaluru railway station for 15 guests on 28 Feb?", "label": "guest_logistics", "split": "val"}
+{"text": "We need 25 rooms at a hotel for our wedding guests on 19 and 20 January, please advise.", "label": "guest_logistics", "split": "val"}
+{"text": "can you help with invitations for baby shower, a simple online card for whatsapp", "label": "guest_logistics", "split": "val"}
+{"text": "Please manage the guest list and send reminders. We have 150 invited and want a final count a week before.", "label": "guest_logistics", "split": "val"}
+{"text": "Need parking space and a bus shuttle from the metro station to the event hall for about 400 attendees.", "label": "guest_logistics", "split": "val"}
+{"text": "We are hosting a conference, and delegates need airport transfer and hotel stay for 3 nights in Delhi.", "label": "guest_logistics", "split": "val"}
+{"text": "Where will the elderly guests sit? We would like chairs near the stage and easy access to the washroom.", "label": "guest_logistics", "split": "val"}
+{"text": "Looking for a team to place guests at tables at the reception, seating for 24 round tables of 10.", "label": "guest_logistics", "split": "val"}
+{"text": "Our guests from Bangalore need an overnight stay in Ooty. Can you block 12 rooms for 2 nights?", "label": "guest_logistics", "split": "val"}
+{"text": "Can you ship our wedding invites to 60 addresses across India? We'll provide the list.", "label": "guest_logistics", "split": "val"}
+{"text": "Need a bus for 50 people from Mysuru to Coorg on the morning of 8 Feb for the wedding party.", "label": "guest_logistics", "split": "test"}
+{"text": "Please share the options for guest accommodation near the Goa venue. 35 rooms for three nights in March.", "label": "guest_logistics", "split": "test"}
+{"text": "We'd like to do QR check-in and badges for the product launch. About 350 guests expected.", "label": "guest_logistics", "split": "test"}
+{"text": "Can you print and courier 200 wedding cards to Hyderabad by the end of this month?", "label": "guest_logistics", "split": "test"}
+{"text": "Is a cab available to pick up my in-laws from the Kochi airport at 5 am on Sunday? They are two elderly people with a lot of luggage.", "label": "guest_logistics", "split": "test"}
+{"text": "How to manage a seating plan for a 600 guest reception when there are both family and business guests? Please advise.", "label": "guest_logistics", "split": "test"}
+{"text": "Hotel for 20 guests near the venue, check in Friday, 3 nights, ac rooms, with breakfast", "label": "guest_logistics", "split": "test"}
+{"text": "We want to arrange a valet and a golf cart for guests moving from the parking lot to the farm venue. Please help.", "label": "guest_logistics", "split": "test"}
+{"text": "Do you send reminder calls to guests before the event? I'm worried most won't turn up on time.", "label": "guest_logistics", "split": "test"}
+{"text": "Guests from Singapore will arrive by flight at midnight. Kindly arrange a pickup and a hotel check-in for 8 people.", "label": "guest_logistics", "split": "test"}
+{"text": "invitation design for my son's engagement, theme is blue and white, in malayalam and english please", "label": "guest_logistics", "split": "test"}
+{"text": "Arrange two buses from Pune railway station to the resort at Lonavala for a corporate offsite for 90 people, leaving at 8:30 am.", "label": "guest_logistics", "split": "test"}
+{"text": "Airport pickup?", "label": "guest_logistics", "split": "hard"}
+{"text": "Seating for 200?", "label": "guest_logistics", "split": "hard"}
+{"text": "Cards need printing by Monday, mainly. And let me know if the printer can also do thank you notes. We'll decide about decor later.", "label": "guest_logistics", "split": "hard"}
+{"text": "So many guests are coming from outside the city that I'm losing track. Can you take over bookings of rooms and cars for all of them?", "label": "guest_logistics", "split": "hard"}
+{"text": "Do the guests get to choose veg or non-veg in the RSVP? Asking since the invitation form is going out this week.", "label": "guest_logistics", "split": "hard"}
+{"text": "Can you send me a quotation for a wedding of 300 guests in Bengaluru? Our budget is around Rs 15 lakh.", "label": "quote_pricing", "split": "train"}
+{"text": "What are your package prices for a 1st birthday party at home with 50 guests?", "label": "quote_pricing", "split": "train"}
+{"text": "How much advance do I need to pay to confirm the booking for the 12 Dec event?", "label": "quote_pricing", "split": "train"}
+{"text": "Budget is ₹80,000 for a small housewarming. What can we get at that price?", "label": "quote_pricing", "split": "train"}
+{"text": "do you give any discount for early booking? we are planning for next september", "label": "quote_pricing", "split": "train"}
+{"text": "Please share the rate card for corporate events, we host about 4 or 5 events a year and may sign up with you annually.", "label": "quote_pricing", "split": "train"}
+{"text": "Is the quotation inclusive of GST? Also, what is the payment schedule, like 50 percent now and the rest later?", "label": "quote_pricing", "split": "train"}
+{"text": "Our total budget is $3k for an engagement ceremony. Is that realistic in Dubai, or do we need to increase it?", "label": "quote_pricing", "split": "train"}
+{"text": "Looking for the cost of your silver, gold and platinum wedding packages. Can I get a comparison sheet?", "label": "quote_pricing", "split": "train"}
+{"text": "The quote you sent last week seems higher than what we discussed. Can you review and bring it down?", "label": "quote_pricing", "split": "train"}
+{"text": "can u tell me roughly how much a 200 pax reception will cost in kochi", "label": "quote_pricing", "split": "train"}
+{"text": "What payment methods do you accept, and can we pay in instalments? We are a family on a fixed income.", "label": "quote_pricing", "split": "train"}
+{"text": "Would you offer student discounts for a college fest? Our fund is only about 2 lakh for the entire event.", "label": "quote_pricing", "split": "train"}
+{"text": "Please provide a detailed cost breakup for the sangeet: decor, food, music, lighting, everything on separate lines.", "label": "quote_pricing", "split": "train"}
+{"text": "What is the minimum budget you work with for a destination wedding in Goa for 100 guests?", "label": "quote_pricing", "split": "train"}
+{"text": "Do you charge a planning fee, or is it included in the final bill? We'd like to know before moving ahead.", "label": "quote_pricing", "split": "train"}
+{"text": "I need an estimate for a baby shower of 40 people with budget Rs 50k to 60k. Is it enough?", "label": "quote_pricing", "split": "train"}
+{"text": "We got two other quotes at 8 lakh. Can you match it or give something better for 150 guests?", "label": "quote_pricing", "split": "train"}
+{"text": "Could you email the proposal with prices by Friday? Our director needs to approve the budget for the offsite.", "label": "quote_pricing", "split": "train"}
+{"text": "how much do you charge per head for a corporate dinner, minimum guests, and any hidden costs?", "label": "quote_pricing", "split": "train"}
+{"text": "Are there any seasonal offers for off-peak months? We are flexible on the date and want the cheapest option.", "label": "quote_pricing", "split": "train"}
+{"text": "Is the advance refundable if we change our mind within a week? Also what are the terms for final payment?", "label": "quote_pricing", "split": "train"}
+{"text": "Our budget is limited to 5 lakh for the entire wedding, including hall and food, for roughly 200 people. Please tell us what is possible.", "label": "quote_pricing", "split": "train"}
+{"text": "Quote for 25th anniversary dinner, 60 guests, mid-range. Thanks.", "label": "quote_pricing", "split": "train"}
+{"text": "Can I get an invoice and a proforma for the advance amount? Our company's finance team needs it to process the payment.", "label": "quote_pricing", "split": "train"}
+{"text": "If we add 50 more guests later, how will the price change? I need the per person extra cost.", "label": "quote_pricing", "split": "train"}
+{"text": "Any packages that bundle decor, photography and catering together for under 10 lakh? We are in Chennai.", "label": "quote_pricing", "split": "train"}
+{"text": "How much would it cost to organise a 2-day team offsite for 80 employees in Coorg? Rough range is fine.", "label": "quote_pricing", "split": "train"}
+{"text": "Please explain the difference in price between the premium and standard packages in your brochure.", "label": "quote_pricing", "split": "train"}
+{"text": "Is there a cheaper option if we choose a weekday instead of Saturday? Rates seem to be much higher on weekends.", "label": "quote_pricing", "split": "train"}
+{"text": "We can pay 25 percent now and the rest on the event day. Is that acceptable?", "label": "quote_pricing", "split": "train"}
+{"text": "Kindly share your corporate rates for a half-day conference with 120 attendees, with lunch and AV included.", "label": "quote_pricing", "split": "train"}
+{"text": "Hello, what's the starting price for decor alone? Planning a mandap and stage, nothing else.", "label": "quote_pricing", "split": "train"}
+{"text": "do you take credit card or upi for the booking amount?", "label": "quote_pricing", "split": "train"}
+{"text": "Could we negotiate? We are bringing a referral from a past client and a second event in March.", "label": "quote_pricing", "split": "train"}
+{"text": "Need a ballpark figure for a Rajasthan destination wedding with 250 guests and a 3-day programme.", "label": "quote_pricing", "split": "train"}
+{"text": "Are the quoted rates valid till January or will it go up due to the wedding season? Planning to book now if so.", "label": "quote_pricing", "split": "train"}
+{"text": "Total cost estimate for a farewell party for 70 people with food, music and a small stage. We can spend up to Rs 1.2 lakh.", "label": "quote_pricing", "split": "train"}
+{"text": "What taxes and service charges will be added on top of the package price? I want to avoid surprises.", "label": "quote_pricing", "split": "train"}
+{"text": "My budget is tight, can you suggest where I can cut costs without compromising the experience? We are hosting 100 guests on 15/03/2027.", "label": "quote_pricing", "split": "train"}
+{"text": "Please tell me the cost for a 100 guest birthday party with a DJ and catering package.", "label": "quote_pricing", "split": "val"}
+{"text": "How much is the booking amount, and will it be adjusted in the final bill?", "label": "quote_pricing", "split": "val"}
+{"text": "need a quote for a product launch, 200 people, budget is 6 lakh", "label": "quote_pricing", "split": "val"}
+{"text": "Can you give a discount if we book three events with you this year?", "label": "quote_pricing", "split": "val"}
+{"text": "What's the total price for a basic wedding package? Please send the PDF brochure.", "label": "quote_pricing", "split": "val"}
+{"text": "Is it possible to pay half after the event? We usually have a net 30 payment term at my company.", "label": "quote_pricing", "split": "val"}
+{"text": "Hello, I'd like a rough estimate for a two-day sangeet and wedding for 400 guests in Hyderabad.", "label": "quote_pricing", "split": "val"}
+{"text": "Are there extra charges for travel if the event is outside the city, say in Mysuru?", "label": "quote_pricing", "split": "val"}
+{"text": "Our budget is Rs 3.5 lakh for an engagement, please tell me what's possible within that.", "label": "quote_pricing", "split": "val"}
+{"text": "Can we get the quote in writing and also a validity period for the offer?", "label": "quote_pricing", "split": "val"}
+{"text": "What is the price range for a conference of 300 delegates with a hall, lunch and basic AV in Pune?", "label": "quote_pricing", "split": "test"}
+{"text": "We'd like the all-inclusive wedding price for 500 guests, Kerala style, Thrissur. Please send the quotation by email.", "label": "quote_pricing", "split": "test"}
+{"text": "how much for just planning and coordination on the day? we already have the vendors", "label": "quote_pricing", "split": "test"}
+{"text": "Do you offer EMI or staged payments for large weddings? Spending is around 25 lakh.", "label": "quote_pricing", "split": "test"}
+{"text": "What is the cancellation fee in the contract? It's part of the quote so I would like to understand the terms first.", "label": "quote_pricing", "split": "test"}
+{"text": "Pricing for a corporate year-end party with 250 employees on 20 Dec, with food, a DJ and decor. Please quote.", "label": "quote_pricing", "split": "test"}
+{"text": "can you do a wedding in 4 lakh, 100 guests, simple veg lunch", "label": "quote_pricing", "split": "test"}
+{"text": "Please send the updated quote with the reduced guest count of 120 and the revised cost.", "label": "quote_pricing", "split": "test"}
+{"text": "Could we see what the price would be if we remove the photography and just keep the decor and food?", "label": "quote_pricing", "split": "test"}
+{"text": "Our budget is $10,000 for a wedding in Bali. What would be the price for your planning services?", "label": "quote_pricing", "split": "test"}
+{"text": "Booking advance for the baby shower, how much, and can I transfer it through NEFT?", "label": "quote_pricing", "split": "test"}
+{"text": "Need a cost estimate for a house party with 30 friends, no extravagant stuff, around 25k budget.", "label": "quote_pricing", "split": "test"}
+{"text": "price list?", "label": "quote_pricing", "split": "hard"}
+{"text": "Budget 2 lakh, possible?", "label": "quote_pricing", "split": "hard"}
+{"text": "I only want to know the rate for 150 plates, nothing about the menu itself. Is it in the 800 to 1000 range or higher?", "label": "quote_pricing", "split": "hard"}
+{"text": "The venue and DJ I have already. Can you tell me what discount I would get on decor if I book the stage and entrance together?", "label": "quote_pricing", "split": "hard"}
+{"text": "Tell me the cost first. After that I will decide on the venue, the date and the theme, but price matters most to my family.", "label": "quote_pricing", "split": "hard"}
+{"text": "We need to postpone our wedding from 12 Dec to 20 Jan because of a family emergency. Is that possible?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Please cancel the booking for the birthday party on 9 Nov and let me know about the refund.", "label": "reschedule_cancel", "split": "train"}
+{"text": "can we shift the reception from the evening to lunch time? the guests are mostly elderly", "label": "reschedule_cancel", "split": "train"}
+{"text": "The venue we chose is no longer available due to a double booking by them. We need to move to a different hall. What are our options?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Hello, our guest count has gone down from 300 to 180. How will this affect the booking and the advance we paid?", "label": "reschedule_cancel", "split": "train"}
+{"text": "I'd like to reschedule the corporate event from next Saturday to the following weekend. Please confirm if it can be done without extra charges.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Because of heavy rain forecasts, can we move the garden engagement to the next day?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Cancelling the baby shower as my wife's doctor advised bed rest. How much of the advance will I get back?", "label": "reschedule_cancel", "split": "train"}
+{"text": "We want to change the venue from Mysuru to Coorg. Is it too late?", "label": "reschedule_cancel", "split": "train"}
+{"text": "please change the start time to 7 pm instead of 5 pm, guests are coming from office", "label": "reschedule_cancel", "split": "train"}
+{"text": "Our wedding date has been advanced to 3rd February because the priest suggested a better muhurtham. Can your team adjust everything?", "label": "reschedule_cancel", "split": "train"}
+{"text": "The sponsor pulled out and we need to cancel the product launch. What's your cancellation policy?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Can we reduce the number of tables from 30 to 22 and drop one counter in the menu after confirming the booking?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Event cancelled, family reasons. Kindly process the refund to the same account.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Can the booking amount be carried forward to a new date? We are postponing the college fest by a month due to exams.", "label": "reschedule_cancel", "split": "train"}
+{"text": "We want to move the farewell party from Friday to Thursday. Same venue, same timing. Is it possible?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Is it possible to switch from the outdoor lawn to the indoor hall because of the weather? The event is in two days.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Due to a bereavement, we have to defer the housewarming. Could we pick a date in March instead?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Our flights have been cancelled so we need to shorten the offsite from 3 days to 2 days. Can the bookings be changed?", "label": "reschedule_cancel", "split": "train"}
+{"text": "I booked a decor package last month but have changed my mind and want to cancel. What's the process?", "label": "reschedule_cancel", "split": "train"}
+{"text": "any possibility of moving the date by two weeks? the wedding hall called to say renovation is not complete", "label": "reschedule_cancel", "split": "train"}
+{"text": "Our anniversary event needs to be shifted to a smaller venue as only 40 people are coming now instead of 100.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Need to cancel the DJ and the live band, but keep the rest of the arrangements as they are. Is partial cancellation allowed?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Please let me know the last date to change the booking without any penalty. We are not sure about 28/02/2027 as the date yet.", "label": "reschedule_cancel", "split": "train"}
+{"text": "My exam schedule changed, so I want to push my 21st birthday bash to the 15th of next month. Is the advance transferable?", "label": "reschedule_cancel", "split": "train"}
+{"text": "We would like to change the entry time of the vendors from 9 am to noon because the venue only opens then. Please inform them.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Update the date: the conference is now in the third week of October instead of the second.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Please remove 40 guests from the final headcount. We were told we could revise the count up to 7 days before.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Cancel the reception, we're going with a registered marriage only. What are the charges?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Is a full refund possible if I cancel 3 months before the event? Please send the policy document.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Could you shift our sangeet to the previous evening? The groom's relatives can only travel on the 14th.", "label": "reschedule_cancel", "split": "train"}
+{"text": "we have to call off the engagement party, please tell me what happens to the deposit", "label": "reschedule_cancel", "split": "train"}
+{"text": "We would like to swap the venue to a hotel because the resort has no rooms left. Can you handle the shift of everything else?", "label": "reschedule_cancel", "split": "train"}
+{"text": "The cricket match got rescheduled so our corporate dinner has to be moved by a day. Please confirm the new date with all vendors.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Our event is on hold until further notice. Can the booking be frozen for 6 months without losing the advance?", "label": "reschedule_cancel", "split": "train"}
+{"text": "We want to postpone by 3 days if the hall is free. If not, we will have to cancel. Let me know quickly please.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Switching the theme and the menu is not a problem but the date has to change, we're moving to the 30th. Please update the booking.", "label": "reschedule_cancel", "split": "train"}
+{"text": "After booking, my in-laws said more people will come. Can we increase the headcount to 250 from 200 and push the start to 6 pm?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Please cancel my order and refund the advance, I found a different planner closer to home.", "label": "reschedule_cancel", "split": "train"}
+{"text": "Sorry but the date of the baby shower needs to be changed, my sister can only travel after the 25th. What's the earliest alternative?", "label": "reschedule_cancel", "split": "train"}
+{"text": "Need to reschedule the engagement from 14 Feb to 21 Feb. Any issues from your side?", "label": "reschedule_cancel", "split": "val"}
+{"text": "Please cancel our booking for 3 Dec, wedding is called off. What refund can we expect?", "label": "reschedule_cancel", "split": "val"}
+{"text": "can we move the baby shower to a sunday?", "label": "reschedule_cancel", "split": "val"}
+{"text": "We have to reduce the guest list from 150 to 100 due to budget. How will it change the contract?", "label": "reschedule_cancel", "split": "val"}
+{"text": "The groom got a visa appointment on our wedding date, so the whole wedding needs to be pushed by a month.", "label": "reschedule_cancel", "split": "val"}
+{"text": "Is a venue change possible three days before the event? The hall has an AC problem.", "label": "reschedule_cancel", "split": "val"}
+{"text": "I want to cancel the live stream and the photographer but keep everything else.", "label": "reschedule_cancel", "split": "val"}
+{"text": "Our corporate offsite is being postponed to Q2. Can the advance be adjusted against the new date?", "label": "reschedule_cancel", "split": "val"}
+{"text": "Kindly change the time of the event to 11 am from 6 pm. The new timing works better for kids.", "label": "reschedule_cancel", "split": "val"}
+{"text": "Wedding cancelled due to illness, sorry for the trouble. Please share the cancellation terms.", "label": "reschedule_cancel", "split": "val"}
+{"text": "We have to push the housewarming to a later date as the construction is not done. Can we choose a new date in January?", "label": "reschedule_cancel", "split": "test"}
+{"text": "Please refund my advance, I'm cancelling the event as the college has denied permission for the fest.", "label": "reschedule_cancel", "split": "test"}
+{"text": "can the date be moved from saturday to sunday, same venue", "label": "reschedule_cancel", "split": "test"}
+{"text": "The groom's father is unwell and we would like to reschedule the wedding by two or three months. What do we do about the advance?", "label": "reschedule_cancel", "split": "test"}
+{"text": "Could you move the product launch to a larger hall? We now expect 400 people instead of 250.", "label": "reschedule_cancel", "split": "test"}
+{"text": "We want to cancel the cake and dessert counters from the order since we are tying with a bakery. Please update the booking sheet.", "label": "reschedule_cancel", "split": "test"}
+{"text": "There is a clash with another family function on 5 April. Can we change the date of the party to 12 April?", "label": "reschedule_cancel", "split": "test"}
+{"text": "Event is cancelled! The company has frozen all spending. Please process the refund as per the terms.", "label": "reschedule_cancel", "split": "test"}
+{"text": "Need to change venue from Bengaluru to Mysuru for the reception, but keep the same date and package. Can that be done?", "label": "reschedule_cancel", "split": "test"}
+{"text": "I'd like to postpone my daughter's engagement by one week as the astrologer asked, same arrangements.", "label": "reschedule_cancel", "split": "test"}
+{"text": "Revised headcount is 90 only now, can the vendors be told and the booking changed?", "label": "reschedule_cancel", "split": "test"}
+{"text": "We got a better date from the priest, 19 Nov instead of 26 Nov. Please check if everything is available.", "label": "reschedule_cancel", "split": "test"}
+{"text": "Cancel it.", "label": "reschedule_cancel", "split": "hard"}
+{"text": "Move to Sunday?", "label": "reschedule_cancel", "split": "hard"}
+{"text": "I paid the advance last week for decor but I've changed my mind about the theme entirely, so please drop the whole booking and return the money.", "label": "reschedule_cancel", "split": "hard"}
+{"text": "The caterer you assigned seems perfectly good, I'm just worried the date may clash with exam week so I want to find a new date.", "label": "reschedule_cancel", "split": "hard"}
+{"text": "Can't make it on the 8th, the venue and everyone else is fine with the 15th. Please just update the calendar.", "label": "reschedule_cancel", "split": "hard"}
+{"text": "We want a full-service planner for our wedding in February. We're overwhelmed and don't know where to start.", "label": "general_planning", "split": "train"}
+{"text": "Can you handle everything end to end for my daughter's engagement? Venue, food, decor, all of it. We just want to show up.", "label": "general_planning", "split": "train"}
+{"text": "Hi, I'm planning a surprise 50th birthday for my husband and need a planner to take over. About 60 guests in Delhi.", "label": "general_planning", "split": "train"}
+{"text": "What's the ideal timeline to start planning a destination wedding? We're getting married next December.", "label": "general_planning", "split": "train"}
+{"text": "Looking to book a consultation call with your planning team about our corporate offsite. When are you free this week?", "label": "general_planning", "split": "train"}
+{"text": "I have never organised an event before. Can someone walk me through the steps for a baby shower in Pune?", "label": "general_planning", "split": "train"}
+{"text": "do you do complete event management for product launches, from concept to execution", "label": "general_planning", "split": "train"}
+{"text": "We're thinking of a Goa wedding with 150 guests and want someone to coordinate the whole thing with local vendors.", "label": "general_planning", "split": "train"}
+{"text": "Could you act as a day-of coordinator for our reception? We've booked everything already but need someone to run the show.", "label": "general_planning", "split": "train"}
+{"text": "Please help us plan a three-day family reunion in Kerala. We have no clue about the schedule, activities or logistics.", "label": "general_planning", "split": "train"}
+{"text": "Our company's 25th anniversary is coming and the leadership wants a memorable celebration. Can we set up a meeting to discuss ideas?", "label": "general_planning", "split": "train"}
+{"text": "What does a typical planning process look like with your agency? Initial meeting, proposal, and then what?", "label": "general_planning", "split": "train"}
+{"text": "Need an event manager for a three-day tech conference, from registration to the closing party. Around 800 delegates.", "label": "general_planning", "split": "train"}
+{"text": "hello, i want to organise my parents 30th anniversary but dont know what to do, please guide me", "label": "general_planning", "split": "train"}
+{"text": "We would like to appoint one planner to handle the mehendi, sangeet, wedding and reception together. How do you manage multiple functions?", "label": "general_planning", "split": "train"}
+{"text": "Can you create a checklist and timeline for a wedding that is 6 months away? We want to stay organised.", "label": "general_planning", "split": "train"}
+{"text": "Do you offer a free initial consultation? We're planning a college alumni meet and want expert advice before deciding.", "label": "general_planning", "split": "train"}
+{"text": "Planning an Indian wedding in London and need someone who can run the whole thing remotely. Do you work abroad?", "label": "general_planning", "split": "train"}
+{"text": "Hello! Our team wants to hand over the complete annual day planning, with theme, programme and execution, to a professional. Please call us.", "label": "general_planning", "split": "train"}
+{"text": "I want to understand your services. What all can you plan, and how do you work with clients who have a modest budget?", "label": "general_planning", "split": "train"}
+{"text": "Looking for a planner who can take our idea of a boho beach engagement and turn it into a full event plan.", "label": "general_planning", "split": "train"}
+{"text": "We are first-time hosts of a big family function. Is it too early to contact you, six months ahead of the date?", "label": "general_planning", "split": "train"}
+{"text": "Please help me plan a farewell party for my colleague. I've never done it, so how do I even start?", "label": "general_planning", "split": "train"}
+{"text": "can someone from your team visit our home and discuss the housewarming plan in person", "label": "general_planning", "split": "train"}
+{"text": "Need a wedding coordinator who speaks Malayalam and Hindi for a mixed family. Please get in touch with details of your planning services.", "label": "general_planning", "split": "train"}
+{"text": "What is the best month to hold a wedding in Bengaluru, and how far ahead should we start booking vendors?", "label": "general_planning", "split": "train"}
+{"text": "We want an entire event done for a school's annual function, 1200 attendees. Do you have experience with such large events?", "label": "general_planning", "split": "train"}
+{"text": "How do you coordinate vendors? I'm worried about things falling apart on the day if we do it ourselves.", "label": "general_planning", "split": "train"}
+{"text": "Our startup is planning its first offline meetup. Could you advise us on format, agenda and flow?", "label": "general_planning", "split": "train"}
+{"text": "Wanted to know if you do customised events, because we want a very different style of birthday, not the usual party hall type.", "label": "general_planning", "split": "train"}
+{"text": "Let's schedule a call to discuss a 40-person retreat in the hills. We have a rough idea but need someone to put it together.", "label": "general_planning", "split": "train"}
+{"text": "Is there someone who can manage all the rituals and schedule for a south Indian wedding, and coordinate with the priest and vendors?", "label": "general_planning", "split": "train"}
+{"text": "We have a date, 6 March 2027, and nothing else. Please advise how to build the programme from scratch.", "label": "general_planning", "split": "train"}
+{"text": "What services do you provide for a 1st birthday? We want an all-in-one plan with a single point of contact.", "label": "general_planning", "split": "train"}
+{"text": "Interested in your wedding planning service. We have a big family and lots of rituals, so need help managing the flow.", "label": "general_planning", "split": "train"}
+{"text": "A friend of mine said you managed her entire reception beautifully. I want something similar for my brother's. Can I speak to a planner?", "label": "general_planning", "split": "train"}
+{"text": "We want to plan a retirement party for my boss. Could you suggest an overall concept, programme and who should do what?", "label": "general_planning", "split": "train"}
+{"text": "Can you share how many events you manage at the same time and who our point of contact would be? Need to be sure of full-service planning.", "label": "general_planning", "split": "train"}
+{"text": "Looking for end to end support for an international students' cultural night. We have nothing booked yet.", "label": "general_planning", "split": "train"}
+{"text": "Please connect me with a planner who can take care of a quiet 30 person wedding in Mysuru, we don't want to run around ourselves.", "label": "general_planning", "split": "train"}
+{"text": "I'd like to hire a wedding planner for the whole thing, Chennai, around 400 guests next April.", "label": "general_planning", "split": "val"}
+{"text": "Can we talk to someone about organising a kitty party's anniversary celebration? Just need guidance on how to do this.", "label": "general_planning", "split": "val"}
+{"text": "need event planner for a corporate gala dinner. when can we have a meeting", "label": "general_planning", "split": "val"}
+{"text": "We'd like to plan our engagement at a small scale but with full coordination. Can your planner join the call tomorrow?", "label": "general_planning", "split": "val"}
+{"text": "How early should I start planning for a 2027 wedding? We got engaged recently and everyone says we must hurry.", "label": "general_planning", "split": "val"}
+{"text": "Please handle our entire product launch event in Mumbai from concept to execution.", "label": "general_planning", "split": "val"}
+{"text": "Can you recommend how to run a baby shower with games and flow for 40 women? I'm hosting for the first time.", "label": "general_planning", "split": "val"}
+{"text": "Planning a destination wedding in Jaipur, we'd like to speak to a planner and know what the process looks like.", "label": "general_planning", "split": "val"}
+{"text": "I need a one-stop agency for college festival coordination, including sponsors, scheduling and volunteers.", "label": "general_planning", "split": "val"}
+{"text": "Is it possible to hire you only on the wedding day for coordination and management?", "label": "general_planning", "split": "val"}
+{"text": "Hello, we are looking for a planner to organise everything for my parents' 60th birthday in Coimbatore. We have no experience.", "label": "general_planning", "split": "test"}
+{"text": "What's your process? I want to book a consultation to plan a big Kannada-Telugu wedding.", "label": "general_planning", "split": "test"}
+{"text": "can u do the whole thing for a housewarming, like a to do list and who to call", "label": "general_planning", "split": "test"}
+{"text": "We're organising a conference for the first time and need support from the beginning. Could you set up a discovery call?", "label": "general_planning", "split": "test"}
+{"text": "Looking for someone to plan and execute an Onam celebration at our office. Everything from food to games.", "label": "general_planning", "split": "test"}
+{"text": "Can we have an initial discussion about what a 200-person Diwali party would involve and what you'd recommend?", "label": "general_planning", "split": "test"}
+{"text": "Need a planner to oversee the setup, vendors and timings on the day of our son's wedding in Mangaluru.", "label": "general_planning", "split": "test"}
+{"text": "How many weeks before the event should a planner be involved? We have an anniversary party next spring.", "label": "general_planning", "split": "test"}
+{"text": "Do you plan weddings in the hill stations, and can you handle the whole show for 80 guests?", "label": "general_planning", "split": "test"}
+{"text": "Could someone guide us on how to organise a school reunion for 150 alumni in Delhi?", "label": "general_planning", "split": "test"}
+{"text": "Please plan a themed birthday for my 10 year old, we want a package with everything, single contact person.", "label": "general_planning", "split": "test"}
+{"text": "I'd like to get an overview of your planning services for corporate team-building offsites in Goa.", "label": "general_planning", "split": "test"}
+{"text": "Need event planner.", "label": "general_planning", "split": "hard"}
+{"text": "Where to start?", "label": "general_planning", "split": "hard"}
+{"text": "Honestly we have no idea about anything, not the venue, the food, the decor, or even the date. Someone please just take charge of the whole wedding and tell us what to do.", "label": "general_planning", "split": "hard"}
+{"text": "Can I get a quick call about your services? Maybe ask about price and dates later, but first I want to understand what you do overall.", "label": "general_planning", "split": "hard"}
+{"text": "Our timeline is tight, only 3 weeks. Is it still sensible to hire a planner for the full birthday arrangement or do I do it myself?", "label": "general_planning", "split": "hard"}
+{"text": "The food at my sister's wedding last week ran out by 9 pm and half the guests went home hungry. This is unacceptable.", "label": "complaint_feedback", "split": "train"}
+{"text": "Your DJ arrived two hours late to our anniversary party and nobody even called. We expect some compensation.", "label": "complaint_feedback", "split": "train"}
+{"text": "just wanted to say thank you, the engagement was perfect and everybody loved the decor. you guys are amazing", "label": "complaint_feedback", "split": "train"}
+{"text": "The photographer you sent delivered only 40 pictures from a 6 hour event. We paid for the full coverage and I'd like an explanation.", "label": "complaint_feedback", "split": "train"}
+{"text": "I want to leave a review: the team was professional, punctual and handled every little emergency calmly at our wedding in Mysuru.", "label": "complaint_feedback", "split": "train"}
+{"text": "The sound system kept cutting out during the speeches at our corporate dinner, and your staff did nothing about it. Very embarrassing in front of clients.", "label": "complaint_feedback", "split": "train"}
+{"text": "We were promised a floral stage but what we got was plastic flowers in a corner. Please refund the difference.", "label": "complaint_feedback", "split": "train"}
+{"text": "Rude behaviour from your coordinator at the venue. He shouted at my relatives in front of everyone, and I would like to speak to a manager.", "label": "complaint_feedback", "split": "train"}
+{"text": "Wonderful job on my son's birthday! The kids loved the magician and the balloons. Will definitely book you again.", "label": "complaint_feedback", "split": "train"}
+{"text": "The AC in the hall wasn't working and nobody from your team responded to our calls. Elderly guests were suffering in the heat.", "label": "complaint_feedback", "split": "train"}
+{"text": "Our wedding album arrived with the wrong couple's photos in it, and some pages are blurred. Very disappointed.", "label": "complaint_feedback", "split": "train"}
+{"text": "Honestly the worst experience, everything started 3 hours late, the stage was unfinished and the guests were left standing. I want a written apology.", "label": "complaint_feedback", "split": "train"}
+{"text": "Hi, I'd like to give some feedback about the farewell party, the games were great but the sound was too loud for older colleagues.", "label": "complaint_feedback", "split": "train"}
+{"text": "We hired you for a baby shower last month and the cake was not what we ordered. Wrong flavour and no name on it.", "label": "complaint_feedback", "split": "train"}
+{"text": "Please pass on my compliments to the team who did my parents' anniversary. Everything went smoothly and the family is still talking about it.", "label": "complaint_feedback", "split": "train"}
+{"text": "The bill I received is 20,000 more than the final invoice we agreed on. I'm very upset about how this was handled after the event.", "label": "complaint_feedback", "split": "train"}
+{"text": "the lighting guys damaged the chandelier at our hall and the hall owners are now asking us for money, can you please sort this", "label": "complaint_feedback", "split": "train"}
+{"text": "Your driver for the guest pickups was lost and took a different route, two of our guests missed their flights. We want to be compensated.", "label": "complaint_feedback", "split": "train"}
+{"text": "I am writing to complain about the cleanliness of the washrooms at the venue you suggested. It was embarrassing for a wedding of 400 people.", "label": "complaint_feedback", "split": "train"}
+{"text": "Four stars from us. Great planning and the food was top notch, but the entry took too long and the queue for photos was a mess.", "label": "complaint_feedback", "split": "train"}
+{"text": "Where was your supervisor on the day of my event? Nobody was in charge and the vendors did whatever they wanted.", "label": "complaint_feedback", "split": "train"}
+{"text": "We booked a live band and a different, much smaller group showed up. This was not what we agreed. Please look into this and compensate us.", "label": "complaint_feedback", "split": "train"}
+{"text": "Our company's annual party was a huge success. The CEO sent a thank you email to the entire team, so thanks for all your efforts!", "label": "complaint_feedback", "split": "train"}
+{"text": "The videographer never sent our wedding film even though 3 months have passed. I've called many times with no response.", "label": "complaint_feedback", "split": "train"}
+{"text": "Disappointed with the quality of the return gifts, they were cheap and broken. This is not what we saw in the sample.", "label": "complaint_feedback", "split": "train"}
+{"text": "The mandap collapsed halfway through the ceremony. Luckily nobody got hurt but this is a serious safety issue and I'm taking it up with you.", "label": "complaint_feedback", "split": "train"}
+{"text": "really happy with how the housewarming went, special thanks to the decor team and the lady who managed the food counters", "label": "complaint_feedback", "split": "train"}
+{"text": "The staff took away the leftover sweets and gifts without informing us. I'm not comfortable with how your people behaved and I want an answer.", "label": "complaint_feedback", "split": "train"}
+{"text": "Please tell me who is responsible: the cake was served warm and melted, it was a disaster for my daughter's birthday and I paid a premium for it.", "label": "complaint_feedback", "split": "train"}
+{"text": "We have been waiting two weeks for the refund promised after the event was spoiled by rain. Please act now.", "label": "complaint_feedback", "split": "train"}
+{"text": "Great experience overall. A small suggestion, though: please add more signboards for parking next time, many guests were confused.", "label": "complaint_feedback", "split": "train"}
+{"text": "I'd like to formally lodge a grievance regarding the damaged sofa and torn drapes returned by your decor vendor after our event.", "label": "complaint_feedback", "split": "train"}
+{"text": "The anchor was rude and made inappropriate jokes in front of elders. Never again, and we want our money back for the entertainment portion.", "label": "complaint_feedback", "split": "train"}
+{"text": "Thank you for the lovely sangeet! My mother is already recommending your team to her friends. The lighting and choreography were just beautiful.", "label": "complaint_feedback", "split": "train"}
+{"text": "We were charged for 300 plates even though only 220 guests came. This was not explained in advance. I need this fixed.", "label": "complaint_feedback", "split": "train"}
+{"text": "The valet scratched my car at the venue and no one has taken responsibility. I'd like this resolved immediately.", "label": "complaint_feedback", "split": "train"}
+{"text": "Reviewing your service at the product launch: the event ran well, but there were far too few staff members at the registration desk and the line was long.", "label": "complaint_feedback", "split": "train"}
+{"text": "the sunday event was a total mess, wrong seating, no water, and your team didn't care. never recommending you", "label": "complaint_feedback", "split": "train"}
+{"text": "Your team made a lot of mistakes in the baby shower. I want to speak to the owner about the way it was handled.", "label": "complaint_feedback", "split": "train"}
+{"text": "My review of your service: great coordination before the event but on the day the cake table was empty and the decor was missing half the items.", "label": "complaint_feedback", "split": "train"}
+{"text": "The decorators left the venue messy and the hall owner charged us a cleaning fee. We want you to cover it.", "label": "complaint_feedback", "split": "val"}
+{"text": "Fantastic work at our wedding last Saturday! Everyone loved the stage and the music.", "label": "complaint_feedback", "split": "val"}
+{"text": "catering was awful at the reception, cold food and rude servers. need a refund", "label": "complaint_feedback", "split": "val"}
+{"text": "I would like to thank the whole team, especially the person who stayed up all night to fix the broken stage lights.", "label": "complaint_feedback", "split": "val"}
+{"text": "The photographer showed up in casual wear and kept chatting on the phone during the muhurtham. Very unprofessional.", "label": "complaint_feedback", "split": "val"}
+{"text": "After our corporate event the invoice included items we never used. Please look into it and correct the charges.", "label": "complaint_feedback", "split": "val"}
+{"text": "We loved the service but the music was too late to start and many guests had to leave early.", "label": "complaint_feedback", "split": "val"}
+{"text": "My engagement photos have been delayed for over a month now, no update from anyone. This is frustrating.", "label": "complaint_feedback", "split": "val"}
+{"text": "Our guests were stuck in traffic because the bus never came. Why was the shuttle cancelled without informing us?", "label": "complaint_feedback", "split": "val"}
+{"text": "Please accept our feedback: smooth planning and honest advice, five stars for the entire experience.", "label": "complaint_feedback", "split": "val"}
+{"text": "The balloon decor looked nothing like the pictures you showed us. It was patchy and half the balloons had popped before guests arrived.", "label": "complaint_feedback", "split": "test"}
+{"text": "I'm very happy with the anniversary dinner you arranged last weekend. The candle-lit setup was exactly what I wanted.", "label": "complaint_feedback", "split": "test"}
+{"text": "worst service, you took the advance and then the dj never turned up. want my money back", "label": "complaint_feedback", "split": "test"}
+{"text": "The caterer served stale food at our housewarming and two guests got a stomach upset. I expect an explanation and action.", "label": "complaint_feedback", "split": "test"}
+{"text": "Thanks for managing the college fest so well! The students loved the lighting and the headline act.", "label": "complaint_feedback", "split": "test"}
+{"text": "Our welcome desk was unmanned for the first hour of the conference and delegates were confused. I'd like to know why this happened.", "label": "complaint_feedback", "split": "test"}
+{"text": "We're not happy with the way the elderly guests were treated at the wedding, no chairs and no help with food. It should have been planned better.", "label": "complaint_feedback", "split": "test"}
+{"text": "Your team promised a 15 day turnaround for the album and it has been four months. Please escalate this.", "label": "complaint_feedback", "split": "test"}
+{"text": "The mandap looked beautiful but the electrician left wires hanging where kids were running around. Please take safety seriously next time.", "label": "complaint_feedback", "split": "test"}
+{"text": "Just wanted to leave a good review. Everyone from the setup crew to the manager was polite and so helpful at the Pune event.", "label": "complaint_feedback", "split": "test"}
+{"text": "You owe us a discount for the failed AV setup at our seminar. The projector didn't work for the first hour.", "label": "complaint_feedback", "split": "test"}
+{"text": "The event ended up costing us far more than promised and your staff blamed us for it, which was really unfair.", "label": "complaint_feedback", "split": "test"}
+{"text": "Terrible catering.", "label": "complaint_feedback", "split": "hard"}
+{"text": "Brilliant event, thanks!", "label": "complaint_feedback", "split": "hard"}
+{"text": "I'm writing about your catering, though to be fair it was the staff attitude that ruined it. The servers ignored us and one even argued with my father in front of everyone at the reception.", "label": "complaint_feedback", "split": "hard"}
+{"text": "Regarding the quote you gave, no worries, we already paid. What I want to know is why the DJ left early on Saturday and what compensation you plan to give.", "label": "complaint_feedback", "split": "hard"}
+{"text": "Wanted to book you again after the great job at the baby shower, but first I have to say the decor team was fantastic and I'd like to put that in writing.", "label": "complaint_feedback", "split": "hard"}
+{"text": "Hi, I'm a fresh graduate in hospitality management. Are there any openings for event coordinators at your company?", "label": "other", "split": "train"}
+{"text": "Wrong number sorry, I was trying to reach my plumber.", "label": "other", "split": "train"}
+{"text": "We supply LED screens and sound equipment at wholesale rates. Would your team like to see our catalogue and pricing?", "label": "other", "split": "train"}
+{"text": "CONGRATULATIONS! You have won a free iPhone. Click this link to claim your prize before midnight.", "label": "other", "split": "train"}
+{"text": "What's the weather going to be like in Mysuru next week? Need to carry an umbrella.", "label": "other", "split": "train"}
+{"text": "Can you recommend a good dentist near Koramangala? Sorry if this is off topic.", "label": "other", "split": "train"}
+{"text": "Dear sir, I'm a freelance graphic designer with 4 years of experience and would like to work with you. Please find my resume attached.", "label": "other", "split": "train"}
+{"text": "boost your instagram followers 10k for just 500 rupees, dm now", "label": "other", "split": "train"}
+{"text": "Looking to sell you premium organic flowers directly from our farm in Ooty, at half the market price. Interested in a bulk contract?", "label": "other", "split": "train"}
+{"text": "Is this the number for the bank? I wanted to check my account balance.", "label": "other", "split": "train"}
+{"text": "Do you sell second-hand furniture? I saw your listing somewhere.", "label": "other", "split": "train"}
+{"text": "Hello, I'm calling regarding your car's extended warranty. Please call us back at the earliest.", "label": "other", "split": "train"}
+{"text": "We are an insurance company and want to offer event cancellation insurance packages to event companies. Can we meet your director?", "label": "other", "split": "train"}
+{"text": "My phone is not working properly, can your tech team look at it?", "label": "other", "split": "train"}
+{"text": "I wanted to know who won the cricket match yesterday, I think I got the wrong group.", "label": "other", "split": "train"}
+{"text": "Hiring! Work from home and earn 50k per month. No experience needed, send your Aadhaar details to join.", "label": "other", "split": "train"}
+{"text": "Greetings from a local printing press. We offer cheap banners, flex boards and visiting cards for businesses like yours.", "label": "other", "split": "train"}
+{"text": "can you help me write my college assignment on supply chain management? i will pay you", "label": "other", "split": "train"}
+{"text": "I'm an experienced chef looking for part-time work at events. Do you have a vacancy for kitchen staff?", "label": "other", "split": "train"}
+{"text": "Sir, please help me find a rented house in Whitefield, 2BHK, around 25k rent.", "label": "other", "split": "train"}
+{"text": "Looking for investors for my startup. Can we schedule a call to discuss the pitch deck?", "label": "other", "split": "train"}
+{"text": "What are the timings of the nearest temple? I'll visit with my family tomorrow.", "label": "other", "split": "train"}
+{"text": "ok thanks, will check and tell you later, bye for now", "label": "other", "split": "train"}
+{"text": "This is a notice about your domain expiring soon. Renew now at a discounted price to avoid losing your website.", "label": "other", "split": "train"}
+{"text": "Do you provide courier services? I need to send a parcel to Delhi urgently.", "label": "other", "split": "train"}
+{"text": "We are a digital marketing agency offering SEO and Google ads at reasonable rates. Can I send a proposal?", "label": "other", "split": "train"}
+{"text": "Is anyone there? I've been trying to log into my email since morning and it keeps rejecting my password.", "label": "other", "split": "train"}
+{"text": "Hey, how do I get my driving licence renewed? Do you know the process in Bengaluru?", "label": "other", "split": "train"}
+{"text": "Need a tutor for 10th standard maths, evenings only. Please share contacts.", "label": "other", "split": "train"}
+{"text": "Applying for the position of social media intern. I'm studying at a college in Pune and can work remotely.", "label": "other", "split": "train"}
+{"text": "Hello, I run a taxi service in Goa and want to tie up with you for airport transfers. What commission do you offer?", "label": "other", "split": "train"}
+{"text": "Do you know any good biryani restaurants nearby? I'm hungry, lol.", "label": "other", "split": "train"}
+{"text": "I got an email saying that my package is held at customs, can you give me the tracking details?", "label": "other", "split": "train"}
+{"text": "This is only a test message from our system, please ignore it.", "label": "other", "split": "train"}
+{"text": "asdfgh qwerty zxcv hjkl sorry my kid grabbed the phone", "label": "other", "split": "train"}
+{"text": "We specialize in wholesale return gifts and festival hampers. Our MOQ is 100 pieces. Please let us know if you need any samples.", "label": "other", "split": "train"}
+{"text": "How do I reset my Netflix password? I think I messaged the wrong company.", "label": "other", "split": "train"}
+{"text": "Dear Madam, I am a retired teacher wishing to volunteer for any social cause. Do you run any such program?", "label": "other", "split": "train"}
+{"text": "Urgent loan approval in 10 minutes, no documents required. Call now!!", "label": "other", "split": "train"}
+{"text": "Can anyone tell me how to cook paneer butter masala at home? Need the recipe for a dinner tonight.", "label": "other", "split": "train"}
+{"text": "Good morning, I'm looking for a job as an accountant. Is there a vacancy in your finance team?", "label": "other", "split": "val"}
+{"text": "sorry wrong number, meant to text my brother", "label": "other", "split": "val"}
+{"text": "We make custom trophies and mementos. Would you like to buy in bulk for your events?", "label": "other", "split": "val"}
+{"text": "You've been selected for an exclusive crypto investment. Reply YES to start earning 5x in a week.", "label": "other", "split": "val"}
+{"text": "Can you tell me the capital of Australia? My kid is asking.", "label": "other", "split": "val"}
+{"text": "Can I get the Wi-Fi password for the office?", "label": "other", "split": "val"}
+{"text": "Please advise how to apply for a passport, I'm confused about the documents required.", "label": "other", "split": "val"}
+{"text": "We offer ERP and billing software for small businesses. Can I get five minutes of your time?", "label": "other", "split": "val"}
+{"text": "I want to complain about my electricity bill. Which office should I go to?", "label": "other", "split": "val"}
+{"text": "Hello, I am a college student interested in an internship in your design department. Please let me know the process.", "label": "other", "split": "val"}
+{"text": "Hello, are you hiring photographers on a contract basis? I'm a freelancer in Chennai with my own gear.", "label": "other", "split": "test"}
+{"text": "do you sell air tickets? need a flight to kochi tomorrow", "label": "other", "split": "test"}
+{"text": "Hi, we're a catering equipment supplier. We have chafing dishes and burners at very low prices and are looking for bulk buyers.", "label": "other", "split": "test"}
+{"text": "Congratulations, your number was chosen in a lucky draw. Share your OTP to get the reward.", "label": "other", "split": "test"}
+{"text": "can you tell me a good movie to watch tonight", "label": "other", "split": "test"}
+{"text": "Sorry for the disturbance, I wanted to ask where I can buy a second-hand laptop in Hyderabad.", "label": "other", "split": "test"}
+{"text": "I am a web developer and can rebuild your website for cheap. Please check my portfolio.", "label": "other", "split": "test"}
+{"text": "My parcel hasn't arrived and the delivery person isn't picking up. Can you help?", "label": "other", "split": "test"}
+{"text": "I want to know the current gold rate in Mumbai.", "label": "other", "split": "test"}
+{"text": "Dear sir, kindly consider my application for the HR executive role. CV attached, available to join immediately.", "label": "other", "split": "test"}
+{"text": "Hope you are doing well today, just checking if this chat is working.", "label": "other", "split": "test"}
+{"text": "We are looking for sponsorship for our cricket tournament, can you support us with funds?", "label": "other", "split": "test"}
+{"text": "Event job openings?", "label": "other", "split": "hard"}
+{"text": "dj equipment sale", "label": "other", "split": "hard"}
+{"text": "Hello, I saw an event tent outside and wanted to ask if you know where I can get a mobile recharge nearby. Also what is the time right now in Dubai?", "label": "other", "split": "hard"}
+{"text": "We are a decor supply company, not a client. Our wedding drapes and flower stands are available wholesale, please see attached price list for your team to review.", "label": "other", "split": "hard"}
+{"text": "Looking for a wedding gift suggestion for my cousin. Not a planner, just someone who knows something about presents. Budget about 5k.", "label": "other", "split": "hard"}
