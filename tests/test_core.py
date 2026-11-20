@@ -175,6 +175,24 @@ def test_milestone_4_probabilities_sum_to_one_and_threshold_flags_review(sorter)
     assert all(f["needs_review"] for f in flags) and not any(f["needs_review"] for f in core.decide(p, LABELS3, 0.0))
 
 
+def test_milestone_4_short_messages_always_go_to_review_with_a_reason():
+    import numpy as np
+    probs = np.array([[0.99, 0.005, 0.005]] * 3)
+    texts = ["DJ for friday?", "need a hall for my wedding in mysuru", "hall"]
+    flags = core.decide(probs, LABELS3, 0.5, texts)
+    assert [f["needs_review"] for f in flags] == [True, False, True]
+    assert [f["review_reason"] for f in flags] == ["short message", None, "short message"]
+    low = core.decide(np.array([[0.4, 0.3, 0.3]]), LABELS3, 0.5, ["a long enough message about a hall"])[0]
+    assert low["needs_review"] and low["review_reason"] == "low confidence"
+
+
+def test_milestone_4_default_threshold_never_falls_below_the_floor(trained, tmp_path):
+    run, cfg, path = trained
+    lenient = core.Sorter(path, base=tiny_base)             # adapter has no calibrated threshold saved
+    assert lenient.threshold >= core.THRESHOLD_FLOOR
+    assert core.Sorter(path, base=tiny_base, threshold=0.3).threshold == 0.3     # an explicit choice is respected
+
+
 def test_milestone_4_calibration_picks_lowest_safe_threshold():
     conf = [0.99] * 10 + [0.7] * 10 + [0.5] * 10
     right = [True] * 10 + [True] * 9 + [False] + [False] * 10

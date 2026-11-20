@@ -326,13 +326,25 @@ def train(cfg: TaggerConfig, train_rows: list[dict], val_rows: list[dict], base=
 
 
 # ===== Milestone 4: inference pipeline, confidence triage, request details
-def decide(probs: np.ndarray, labels: list[str], threshold: float) -> list[dict]:
-    """Best label, confidence, runner-up and a NEEDS REVIEW flag for each row of label probabilities."""
+MIN_WORDS = 5            # shorter messages always go to a human: the model is confidently wrong on them
+THRESHOLD_FLOOR = 0.9    # the calibrated threshold is never allowed to fall below this (see README, what went wrong)
+
+
+def too_short(text: str) -> bool:
+    return len(text.split()) < MIN_WORDS
+
+
+def decide(probs: np.ndarray, labels: list[str], threshold: float, texts: list[str] | None = None) -> list[dict]:
+    """Best label, confidence, runner-up, NEEDS REVIEW flag and the reason for it, per row of label probabilities.
+    With `texts`, messages under MIN_WORDS words are flagged whatever their confidence."""
     out = []
-    for p in np.asarray(probs):
+    for i, p in enumerate(np.asarray(probs)):
         order = np.argsort(-p)
+        short = texts is not None and too_short(texts[i])
+        low = bool(p[order[0]] < threshold)
         out.append({"label": labels[order[0]], "confidence": round(float(p[order[0]]), 4),
-                    "needs_review": bool(p[order[0]] < threshold), "runner_up": labels[order[1]]})
+                    "needs_review": short or low, "runner_up": labels[order[1]],
+                    "review_reason": "short message" if short else "low confidence" if low else None})
     return out
 
 
@@ -423,7 +435,8 @@ class Sorter:
         self.model, self.tokenizer, self.label_ids, self.cfg = load_adapter(adapter, base)
         merge_lora(self.model)
         self.labels = self.cfg.labels
-        self.threshold = threshold if threshold is not None else self.cfg.extra.get("threshold", 0.9)
+        self.calibrated = self.cfg.extra.get("threshold", THRESHOLD_FLOOR)
+        self.threshold = threshold if threshold is not None else max(self.calibrated, THRESHOLD_FLOOR)
         self.encoder = RequestEncoder(self.tokenizer, self.label_ids, self.cfg.max_len)
 
     def probs(self, texts: list[str]) -> np.ndarray:
@@ -431,7 +444,7 @@ class Sorter:
         return softmax(label_logits(self.model, prompts, self.label_ids, self.tokenizer.pad_token_id).numpy())
 
     def classify(self, texts: list[str]) -> list[dict]:
-        decisions = decide(self.probs(texts), self.labels, self.threshold)
+        decisions = decide(self.probs(texts), self.labels, self.threshold, texts)
         return [make_record(t, d) for t, d in zip(texts, decisions)]
 
 
@@ -445,7 +458,7 @@ def format_record(rec: dict, index: int | None = None) -> str:
     lines = [f"{head}{rec['label']}  {rec['confidence']:.0%}  {flag}  -> {rec['team']}  (priority: {rec['priority']})",
              f"    \"{rec['text']}\""]
     if rec["needs_review"]:
-        lines.append(f"    runner-up: {rec['runner_up']}")
+        lines.append(f"    why: {rec.get('review_reason') or 'low confidence'}, runner-up: {rec['runner_up']}")
     found = details_line(rec["details"]) + (" [URGENT]" if rec["details"].get("urgent") else "")
     if found.strip():
         lines.append(f"    found: {found.strip()}")
@@ -462,12 +475,12 @@ def save_records(records: list[dict], path: str | Path) -> int:
         with path.open("a", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
             if new:
-                w.writerow(["received", "text", "label", "confidence", "needs_review", "runner_up", "team",
+                w.writerow(["received", "text", "label", "confidence", "needs_review", "review_reason", "runner_up", "team",
                             "priority", "guests", "budget", "date", "city", "urgent"])
             for r in records:
                 d = r["details"]
                 w.writerow([r["received"], r["text"], r["label"], r["confidence"], r["needs_review"],
-                            r["runner_up"], r["team"], r["priority"], d.get("guests", ""), d.get("budget", ""),
+                            r.get("review_reason") or "", r["runner_up"], r["team"], r["priority"], d.get("guests", ""), d.get("budget", ""),
                             d.get("date", ""), d.get("city", ""), d["urgent"]])
     else:
         save_records_raw(records, path)
