@@ -40,7 +40,7 @@ def main() -> None:
         right = [p == g for p, g in zip(pred, gold)]
         nb_pred, kw_pred = nb.predict(texts), kw.predict(texts)
         auto = [c >= sorter.threshold and not core.too_short(t) for c, t in zip(conf, texts)]
-        n_auto = sum(auto)
+        n_auto = int(sum(auto))
         out["splits"][split] = {
             "n": len(texts),
             "gpt2": {"accuracy": core.accuracy(pred, gold), "macro_f1": core.macro_f1(pred, gold)},
@@ -56,7 +56,7 @@ def main() -> None:
                        for t, g, p, c, ok in zip(texts, gold, pred, conf, right) if not ok],
         }
     Path("results").mkdir(exist_ok=True)
-    Path("results/results.json").write_text(json.dumps(out, indent=2), encoding="utf-8")
+    Path("results/results.json").write_text(json.dumps(out, indent=2, default=lambda o: o.item()), encoding="utf-8")
 
     lines = ["# Results", "",
              f"Train {len(by['train'])} requests, validation {len(by['val'])} (used only to set the review "

@@ -65,7 +65,7 @@ def main() -> None:
     for split in ("test", "hard"):
         lines.append(f"| {split} | {stat(lambda r: r[split]['auto'])}% | {stat(lambda r: r[split]['auto_accuracy'])}% |")
     Path("results").mkdir(exist_ok=True)
-    Path("results/seeds.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
+    Path("results/seeds.json").write_text(json.dumps(results, indent=2, default=lambda o: o.item()), encoding="utf-8")
     Path("results/seeds.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 
