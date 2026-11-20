@@ -1,5 +1,6 @@
 {
-  "threshold": 0.5938,
+  "threshold": 0.9,
+  "calibrated_threshold": 0.5938,
   "splits": {
     "test": {
       "n": 132,
@@ -27,6 +28,12 @@
         "general_planning": 0.923,
         "complaint_feedback": 1.0,
         "other": 0.762
+      },
+      "policy": {
+        "auto": 0.8484848484848485,
+        "auto_n": 112,
+        "auto_accuracy": 0.9375,
+        "flagged_short": 0
       },
       "coverage": [
         {
@@ -178,6 +185,12 @@
         "general_planning": 0.667,
         "complaint_feedback": 0.8,
         "other": 0.462
+      },
+      "policy": {
+        "auto": 0.41818181818181815,
+        "auto_n": 23,
+        "auto_accuracy": 0.8260869565217391,
+        "flagged_short": 22
       },
       "coverage": [
         {

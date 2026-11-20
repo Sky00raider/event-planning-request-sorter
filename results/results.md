@@ -24,6 +24,15 @@ Confidence is the probability GPT-2 gives its chosen request type (softmax over 
 | 0.95 | 80.3% | 94.3% | 61.8% | 88.2% |
 | 0.5938 (calibrated) | 96.2% | 92.1% | 94.5% | 73.1% |
 
+## The review policy the CLI uses (confidence >= 0.9 and at least 5 words)
+
+The adapter's calibrated threshold is 0.5938; the CLI raises it to a floor of 0.9 and always sends messages under 5 words to a human.
+
+| Split | Calibrated threshold only: auto-sorted / accuracy | Policy: auto-sorted / accuracy | Short messages flagged |
+|---|---|---|---|
+| test | 96.2% / 92.1% | 84.8% / 93.8% | 0 of 132 |
+| hard | 94.5% / 73.1% | 41.8% / 82.6% | 22 of 55 |
+
 ## Per-type F1 for GPT-2
 
 | Type | Test F1 | Hard F1 |
