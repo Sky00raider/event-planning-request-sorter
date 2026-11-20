@@ -1,0 +1,319 @@
+{
+  "threshold": 0.5938,
+  "splits": {
+    "test": {
+      "n": 132,
+      "gpt2": {
+        "accuracy": 0.8939393939393939,
+        "macro_f1": 0.8871818181818182
+      },
+      "naive_bayes": {
+        "accuracy": 0.7575757575757576,
+        "macro_f1": 0.7430909090909092
+      },
+      "keywords": {
+        "accuracy": 0.5606060606060606,
+        "macro_f1": 0.5493636363636363
+      },
+      "per_class_f1": {
+        "venue_inquiry": 0.923,
+        "catering_request": 0.889,
+        "decor_design": 0.88,
+        "entertainment_booking": 0.957,
+        "photo_video": 0.96,
+        "guest_logistics": 0.632,
+        "quote_pricing": 0.833,
+        "reschedule_cancel": 1.0,
+        "general_planning": 0.923,
+        "complaint_feedback": 1.0,
+        "other": 0.762
+      },
+      "coverage": [
+        {
+          "threshold": 0.0,
+          "auto": 1.0,
+          "auto_accuracy": 0.8939393939393939
+        },
+        {
+          "threshold": 0.5,
+          "auto": 0.9848484848484849,
+          "auto_accuracy": 0.9
+        },
+        {
+          "threshold": 0.7,
+          "auto": 0.9242424242424242,
+          "auto_accuracy": 0.9180327868852459
+        },
+        {
+          "threshold": 0.8,
+          "auto": 0.9015151515151515,
+          "auto_accuracy": 0.9327731092436975
+        },
+        {
+          "threshold": 0.9,
+          "auto": 0.8484848484848485,
+          "auto_accuracy": 0.9375
+        },
+        {
+          "threshold": 0.95,
+          "auto": 0.803030303030303,
+          "auto_accuracy": 0.9433962264150944
+        },
+        {
+          "threshold": 0.5938,
+          "auto": 0.9621212121212122,
+          "auto_accuracy": 0.9212598425196851
+        }
+      ],
+      "errors": [
+        {
+          "text": "Looking for table settings and floral arrangements for a formal dinner party with 14 seats, home setting.",
+          "gold": "decor_design",
+          "pred": "catering_request",
+          "confidence": 0.742
+        },
+        {
+          "text": "Looking to hire a mascot and a photo-op character for our store's grand opening on 9 Dec.",
+          "gold": "entertainment_booking",
+          "pred": "decor_design",
+          "confidence": 0.815
+        },
+        {
+          "text": "Please share the options for guest accommodation near the Goa venue. 35 rooms for three nights in March.",
+          "gold": "guest_logistics",
+          "pred": "venue_inquiry",
+          "confidence": 0.561
+        },
+        {
+          "text": "Can you print and courier 200 wedding cards to Hyderabad by the end of this month?",
+          "gold": "guest_logistics",
+          "pred": "quote_pricing",
+          "confidence": 0.772
+        },
+        {
+          "text": "How to manage a seating plan for a 600 guest reception when there are both family and business guests? Please advise.",
+          "gold": "guest_logistics",
+          "pred": "general_planning",
+          "confidence": 0.976
+        },
+        {
+          "text": "Hotel for 20 guests near the venue, check in Friday, 3 nights, ac rooms, with breakfast",
+          "gold": "guest_logistics",
+          "pred": "venue_inquiry",
+          "confidence": 0.592
+        },
+        {
+          "text": "Do you send reminder calls to guests before the event? I'm worried most won't turn up on time.",
+          "gold": "guest_logistics",
+          "pred": "other",
+          "confidence": 0.366
+        },
+        {
+          "text": "invitation design for my son's engagement, theme is blue and white, in malayalam and english please",
+          "gold": "guest_logistics",
+          "pred": "decor_design",
+          "confidence": 1.0
+        },
+        {
+          "text": "how much for just planning and coordination on the day? we already have the vendors",
+          "gold": "quote_pricing",
+          "pred": "general_planning",
+          "confidence": 1.0
+        },
+        {
+          "text": "can you do a wedding in 4 lakh, 100 guests, simple veg lunch",
+          "gold": "quote_pricing",
+          "pred": "catering_request",
+          "confidence": 0.992
+        },
+        {
+          "text": "Hello, are you hiring photographers on a contract basis? I'm a freelancer in Chennai with my own gear.",
+          "gold": "other",
+          "pred": "photo_video",
+          "confidence": 0.984
+        },
+        {
+          "text": "do you sell air tickets? need a flight to kochi tomorrow",
+          "gold": "other",
+          "pred": "guest_logistics",
+          "confidence": 0.588
+        },
+        {
+          "text": "Hi, we're a catering equipment supplier. We have chafing dishes and burners at very low prices and are looking for bulk buyers.",
+          "gold": "other",
+          "pred": "catering_request",
+          "confidence": 0.903
+        },
+        {
+          "text": "I want to know the current gold rate in Mumbai.",
+          "gold": "other",
+          "pred": "quote_pricing",
+          "confidence": 0.981
+        }
+      ]
+    },
+    "hard": {
+      "n": 55,
+      "gpt2": {
+        "accuracy": 0.7090909090909091,
+        "macro_f1": 0.708090909090909
+      },
+      "naive_bayes": {
+        "accuracy": 0.5818181818181818,
+        "macro_f1": 0.5553636363636363
+      },
+      "keywords": {
+        "accuracy": 0.5636363636363636,
+        "macro_f1": 0.5543636363636364
+      },
+      "per_class_f1": {
+        "venue_inquiry": 0.571,
+        "catering_request": 0.889,
+        "decor_design": 0.833,
+        "entertainment_booking": 0.571,
+        "photo_video": 1.0,
+        "guest_logistics": 0.571,
+        "quote_pricing": 0.625,
+        "reschedule_cancel": 0.8,
+        "general_planning": 0.667,
+        "complaint_feedback": 0.8,
+        "other": 0.462
+      },
+      "coverage": [
+        {
+          "threshold": 0.0,
+          "auto": 1.0,
+          "auto_accuracy": 0.7090909090909091
+        },
+        {
+          "threshold": 0.5,
+          "auto": 0.9636363636363636,
+          "auto_accuracy": 0.7169811320754716
+        },
+        {
+          "threshold": 0.7,
+          "auto": 0.8909090909090909,
+          "auto_accuracy": 0.7755102040816326
+        },
+        {
+          "threshold": 0.8,
+          "auto": 0.8545454545454545,
+          "auto_accuracy": 0.7659574468085106
+        },
+        {
+          "threshold": 0.9,
+          "auto": 0.7454545454545455,
+          "auto_accuracy": 0.8048780487804879
+        },
+        {
+          "threshold": 0.95,
+          "auto": 0.6181818181818182,
+          "auto_accuracy": 0.8823529411764706
+        },
+        {
+          "threshold": 0.5938,
+          "auto": 0.9454545454545454,
+          "auto_accuracy": 0.7307692307692307
+        }
+      ],
+      "errors": [
+        {
+          "text": "hall available 14th?",
+          "gold": "venue_inquiry",
+          "pred": "other",
+          "confidence": 0.826
+        },
+        {
+          "text": "Rooftops in Bandra?",
+          "gold": "venue_inquiry",
+          "pred": "decor_design",
+          "confidence": 0.95
+        },
+        {
+          "text": "Is the hall big enough for cake cutting, a stage and dining all at once? How many chairs actually fit inside?",
+          "gold": "venue_inquiry",
+          "pred": "decor_design",
+          "confidence": 0.857
+        },
+        {
+          "text": "biryani for 50?",
+          "gold": "catering_request",
+          "pred": "quote_pricing",
+          "confidence": 0.937
+        },
+        {
+          "text": "DJ for friday?",
+          "gold": "entertainment_booking",
+          "pred": "other",
+          "confidence": 0.987
+        },
+        {
+          "text": "Need a magician",
+          "gold": "entertainment_booking",
+          "pred": "other",
+          "confidence": 0.55
+        },
+        {
+          "text": "Is the band available on the 22nd? The venue and food are already fixed, only the music is pending.",
+          "gold": "entertainment_booking",
+          "pred": "reschedule_cancel",
+          "confidence": 0.624
+        },
+        {
+          "text": "Airport pickup?",
+          "gold": "guest_logistics",
+          "pred": "other",
+          "confidence": 0.948
+        },
+        {
+          "text": "Seating for 200?",
+          "gold": "guest_logistics",
+          "pred": "quote_pricing",
+          "confidence": 0.677
+        },
+        {
+          "text": "Cards need printing by Monday, mainly. And let me know if the printer can also do thank you notes. We'll decide about decor later.",
+          "gold": "guest_logistics",
+          "pred": "quote_pricing",
+          "confidence": 0.334
+        },
+        {
+          "text": "I paid the advance last week for decor but I've changed my mind about the theme entirely, so please drop the whole booking and return the money.",
+          "gold": "reschedule_cancel",
+          "pred": "quote_pricing",
+          "confidence": 0.669
+        },
+        {
+          "text": "Honestly we have no idea about anything, not the venue, the food, the decor, or even the date. Someone please just take charge of the whole wedding and tell us what to do.",
+          "gold": "general_planning",
+          "pred": "complaint_feedback",
+          "confidence": 0.988
+        },
+        {
+          "text": "Can I get a quick call about your services? Maybe ask about price and dates later, but first I want to understand what you do overall.",
+          "gold": "general_planning",
+          "pred": "other",
+          "confidence": 0.979
+        },
+        {
+          "text": "Regarding the quote you gave, no worries, we already paid. What I want to know is why the DJ left early on Saturday and what compensation you plan to give.",
+          "gold": "complaint_feedback",
+          "pred": "quote_pricing",
+          "confidence": 0.83
+        },
+        {
+          "text": "We are a decor supply company, not a client. Our wedding drapes and flower stands are available wholesale, please see attached price list for your team to review.",
+          "gold": "other",
+          "pred": "quote_pricing",
+          "confidence": 0.901
+        },
+        {
+          "text": "Looking for a wedding gift suggestion for my cousin. Not a planner, just someone who knows something about presents. Budget about 5k.",
+          "gold": "other",
+          "pred": "general_planning",
+          "confidence": 0.999
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="645" viewBox="0 0 960 645" font-family="Consolas, Menlo, monospace" font-size="13">
+<rect width="960" height="645" rx="10" fill="#14161c"/><rect width="960" height="30" rx="10" fill="#262a35"/>
+<circle cx="20" cy="15" r="6" fill="#ff5f56"/><circle cx="40" cy="15" r="6" fill="#ffbd2e"/><circle cx="60" cy="15" r="6" fill="#27c93f"/>
+<text x="480" y="20" fill="#9aa0b4" text-anchor="middle">event-planning-request-sorter</text>
+<text x="18" y="56" fill="#7ee787" xml:space="preserve">$ python -m app.cli classify "Need a lawn in Mysuru for 200 guests on 12 Dec, budget Rs 5 lakh" "the DJ </text>
+<text x="18" y="75" fill="#8b93a7" xml:space="preserve">      was 90 minutes late and the speakers kept cutting out, we want a refund asap" --out </text>
+<text x="18" y="94" fill="#8b93a7" xml:space="preserve">      samples/classified_demo.jsonl</text>
+<text x="18" y="113" fill="#e6e9f2" xml:space="preserve">[1] venue_inquiry  94%  ok  -&gt; Venues desk  (priority: normal)</text>
+<text x="18" y="132" fill="#8b93a7" xml:space="preserve">    "Need a lawn in Mysuru for 200 guests on 12 Dec, budget Rs 5 lakh"</text>
+<text x="18" y="151" fill="#8b93a7" xml:space="preserve">    found: guests=200, budget=Rs 5 lakh, date=12 Dec, city=Mysuru</text>
+<text x="18" y="170" fill="#e6e9f2" xml:space="preserve">[2] complaint_feedback  92%  ok  -&gt; Client care  (priority: high)</text>
+<text x="18" y="189" fill="#8b93a7" xml:space="preserve">    "the DJ was 90 minutes late and the speakers kept cutting out, we want a refund asap"</text>
+<text x="18" y="208" fill="#ffa657" xml:space="preserve">    found: [URGENT]</text>
+<text x="18" y="227" fill="#e6e9f2" xml:space="preserve">saved 2 request(s) -&gt; samples/classified_demo.jsonl</text>
+<text x="18" y="246" fill="#e6e9f2" xml:space="preserve"></text>
+<text x="18" y="265" fill="#7ee787" xml:space="preserve">$ python -m app.cli batch samples/incoming.txt --out samples/classified.jsonl --digest samples/digest.md</text>
+<text x="18" y="284" fill="#e6e9f2" xml:space="preserve">[1] venue_inquiry  99%  ok  -&gt; Venues desk  (priority: normal)</text>
+<text x="18" y="303" fill="#8b93a7" xml:space="preserve">    "Hi, we are planning my sister's engagement in Kochi on 14 Jan 2027, around 250 guests. Do you have </text>
+<text x="18" y="322" fill="#8b93a7" xml:space="preserve">      any halls with a stage and AC? Budget is flexible."</text>
+<text x="18" y="341" fill="#8b93a7" xml:space="preserve">    found: guests=250, date=14 Jan 2027, city=Kochi</text>
+<text x="18" y="360" fill="#e6e9f2" xml:space="preserve">[2] catering_request  100%  ok  -&gt; Catering desk  (priority: high)</text>
+<text x="18" y="379" fill="#8b93a7" xml:space="preserve">    "need veg + jain catering for 80 people tomorrow evening, urgent!!"</text>
+<text x="18" y="398" fill="#ffa657" xml:space="preserve">    found: guests=80, date=tomorrow [URGENT]</text>
+<text x="18" y="417" fill="#e6e9f2" xml:space="preserve">[3] reschedule_cancel  100%  ok  -&gt; Bookings and changes  (priority: high)</text>
+<text x="18" y="436" fill="#8b93a7" xml:space="preserve">    "Can we change the date of our corporate offsite from 5 Feb to 19 Feb? Venue is already booked with </text>
+<text x="18" y="455" fill="#8b93a7" xml:space="preserve">      you."</text>
+<text x="18" y="474" fill="#8b93a7" xml:space="preserve">    found: date=5 Feb</text>
+<text x="18" y="493" fill="#e6e9f2" xml:space="preserve">[4] photo_video  100%  ok  -&gt; Media desk  (priority: normal)</text>
+<text x="18" y="512" fill="#8b93a7" xml:space="preserve">    "What does your photography package cost for a 2 day wedding in Goa? Drone shots needed too"</text>
+<text x="18" y="531" fill="#8b93a7" xml:space="preserve">    found: city=Goa</text>
+<text x="18" y="550" fill="#8b93a7" xml:space="preserve">    ...</text>
+<text x="18" y="569" fill="#e6e9f2" xml:space="preserve">saved 12 request(s) -&gt; samples/classified.jsonl</text>
+<text x="18" y="588" fill="#e6e9f2" xml:space="preserve">12 requests, 12 auto-sorted, 0 need review</text>
+<text x="18" y="607" fill="#e6e9f2" xml:space="preserve">digest -&gt; samples/digest.md</text>
+<text x="18" y="626" fill="#e6e9f2" xml:space="preserve"></text>
+</svg>
