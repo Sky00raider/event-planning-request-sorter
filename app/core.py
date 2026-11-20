@@ -110,7 +110,8 @@ def train_only_label_rows(model, label_ids: list[int]):
     weight.requires_grad_(True)
     keep = torch.zeros(weight.shape[0], 1, dtype=weight.dtype, device=weight.device)
     keep[label_ids] = 1.0
-    return weight.register_hook(lambda grad: grad * keep)
+    # the Trainer may move the model to a GPU after this call, so the mask follows the gradient's device
+    return weight.register_hook(lambda grad: grad * keep.to(device=grad.device, dtype=grad.dtype))
 
 
 class RequestEncoder:
