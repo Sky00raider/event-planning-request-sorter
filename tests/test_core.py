@@ -212,3 +212,67 @@ def test_milestone_4_cli_classifies_and_prints(monkeypatch, capsys, sorter):
     assert "venue_inquiry" in out and "Venues desk" in out and "saved" not in out
 
 
+# ===== Milestone 5: saving, review loop, digest
+def _records(sorter):
+    return sorter.classify(["looking for a hall in mysuru 1", "please send a quote 2", "cater lunch 3 urgent"])
+
+
+def test_milestone_5_save_jsonl_appends_and_reads_back(sorter, tmp_path):
+    recs = _records(sorter)
+    path = tmp_path / "out" / "c.jsonl"
+    assert core.save_records(recs[:2], path) == 2 and core.save_records(recs[2:], path) == 1
+    back = core.load_records(path)
+    assert [r["text"] for r in back] == [r["text"] for r in recs] and back[0]["details"]["urgent"] is False
+
+
+def test_milestone_5_save_csv_has_one_header_and_flat_details(sorter, tmp_path):
+    path = tmp_path / "c.csv"
+    core.save_records(_records(sorter), path)
+    core.save_records(_records(sorter), path)
+    lines = path.read_text(encoding="utf-8").splitlines()
+    assert lines[0].startswith("received,text,label") and len(lines) == 7
+
+
+def test_milestone_5_cli_saves_a_batch_file_and_a_digest(monkeypatch, capsys, sorter, tmp_path):
+    from app import cli
+    monkeypatch.setattr(cli, "get_sorter", lambda a: sorter)
+    src = tmp_path / "in.txt"
+    src.write_text("hall for 200 guests 1\n\nsend price quote 2\n", encoding="utf-8")
+    out, digest = tmp_path / "o.jsonl", tmp_path / "d.md"
+    cli.main(["batch", str(src), "--out", str(out), "--digest", str(digest)])
+    assert len(core.load_records(out)) == 2 and "Request digest (2 requests)" in digest.read_text(encoding="utf-8")
+    assert "2 requests" in capsys.readouterr().out
+
+
+def test_milestone_5_read_requests_handles_txt_csv_jsonl(tmp_path):
+    (tmp_path / "a.csv").write_text("id,text\n1,hello hall\n2,\n3,send quote\n", encoding="utf-8")
+    (tmp_path / "a.jsonl").write_text('{"text": "one"}\n{"text": "two"}\n', encoding="utf-8")
+    assert core.read_requests(tmp_path / "a.csv") == ["hello hall", "send quote"]
+    assert core.read_requests(tmp_path / "a.jsonl") == ["one", "two"]
+
+
+def test_milestone_5_review_loop_writes_answers_and_corrections(tmp_path):
+    recs = [{"text": "t1", "label": "other", "confidence": 0.4, "needs_review": True, "runner_up": "decor_design",
+             "team": core.TEAMS["other"], "priority": "low", "details": {"urgent": False}},
+            {"text": "t2", "label": "other", "confidence": 0.3, "needs_review": True, "runner_up": "decor_design",
+             "team": core.TEAMS["other"], "priority": "low", "details": {"urgent": False}},
+            {"text": "t3", "label": "other", "confidence": 0.99, "needs_review": False, "runner_up": "decor_design",
+             "team": core.TEAMS["other"], "priority": "low", "details": {"urgent": False}}]
+    f, corr = tmp_path / "c.jsonl", tmp_path / "corr.jsonl"
+    core.save_records(recs, f)
+    answers = iter(["3", "s"])
+    result = core.review(f, corr, ask=lambda _: next(answers), say=lambda *_: None)
+    assert result == {"reviewed": 1, "corrected": 1, "left": 1}
+    saved = core.load_records(f)
+    assert saved[0]["reviewed_label"] == "decor_design" and "reviewed_label" not in saved[1]
+    fix = core.load_requests(corr)
+    assert fix == [{"text": "t1", "label": "decor_design", "split": "train", "source": "review"}]
+
+
+def test_milestone_5_digest_groups_by_team_and_lists_urgent_first(sorter):
+    recs = _records(sorter)
+    text = core.build_digest(recs)
+    assert text.index("## High priority") < text.index("## By team") < text.index("## Needs a human")
+    assert "cater lunch 3 urgent" in text.split("## By team")[0]
+
+

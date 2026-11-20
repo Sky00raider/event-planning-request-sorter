@@ -105,6 +105,43 @@ def cmd_chat(a):
         _show_and_save(a, sorter.classify([text]))
 
 
+# ===== Milestone 5: batch, review, digest
+def _add_batch(sub):
+    b = sub.add_parser("batch", help="classify every request in a .txt, .csv or .jsonl file")
+    b.add_argument("file")
+    _common_args(b)
+    b.add_argument("--digest", help="also write a markdown hand-over sheet to this path")
+    b.set_defaults(func=cmd_batch)
+    r = sub.add_parser("review", help="confirm or correct the NEEDS REVIEW requests in a saved file")
+    r.add_argument("--file", default=DEFAULT_OUT)
+    r.add_argument("--corrections", default="data/corrections.jsonl")
+    r.set_defaults(func=lambda a: print("review done:", core.review(a.file, a.corrections)))
+    d = sub.add_parser("digest", help="turn a saved file into a markdown digest grouped by team")
+    d.add_argument("--file", default=DEFAULT_OUT)
+    d.add_argument("--out", help="write to this file instead of printing")
+    d.set_defaults(func=cmd_digest)
+
+
+def cmd_batch(a):
+    records = get_sorter(a).classify(core.read_requests(a.file))
+    _show_and_save(a, records)
+    flagged = sum(r["needs_review"] for r in records)
+    print(f"{len(records)} requests, {len(records) - flagged} auto-sorted, {flagged} need review")
+    if a.digest:
+        Path(a.digest).parent.mkdir(parents=True, exist_ok=True)
+        Path(a.digest).write_text(core.build_digest(records), encoding="utf-8")
+        print(f"digest -> {a.digest}")
+
+
+def cmd_digest(a):
+    text = core.build_digest(core.load_records(a.file))
+    if a.out:
+        Path(a.out).write_text(text, encoding="utf-8")
+        print(f"digest -> {a.out}")
+    else:
+        print(text)
+
+
 # ===== Main
 def main(argv: list[str] | None = None) -> None:
     try:

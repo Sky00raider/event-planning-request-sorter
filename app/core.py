@@ -451,3 +451,111 @@ def format_record(rec: dict, index: int | None = None) -> str:
     return "\n".join(lines)
 
 
+# ===== Milestone 5: save classified requests for review, review loop, digest
+def save_records(records: list[dict], path: str | Path) -> int:
+    """Append records to a .jsonl (default) or .csv file; returns how many were written."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.suffix.lower() == ".csv":
+        new = not path.exists() or path.stat().st_size == 0
+        with path.open("a", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            if new:
+                w.writerow(["received", "text", "label", "confidence", "needs_review", "runner_up", "team",
+                            "priority", "guests", "budget", "date", "city", "urgent"])
+            for r in records:
+                d = r["details"]
+                w.writerow([r["received"], r["text"], r["label"], r["confidence"], r["needs_review"],
+                            r["runner_up"], r["team"], r["priority"], d.get("guests", ""), d.get("budget", ""),
+                            d.get("date", ""), d.get("city", ""), d["urgent"]])
+    else:
+        save_records_raw(records, path)
+    return len(records)
+
+
+def save_records_raw(rows: list[dict], path: str | Path) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8", newline="\n") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+def load_records(path: str | Path) -> list[dict]:
+    return [json.loads(line) for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def read_requests(path: str | Path) -> list[str]:
+    """Request texts from .txt (one per line), .csv (a `text` column) or .jsonl (a `text` key)."""
+    path = Path(path)
+    suffix = path.suffix.lower()
+    if suffix == ".csv":
+        with path.open(encoding="utf-8", newline="") as f:
+            return [r["text"].strip() for r in csv.DictReader(f) if r.get("text", "").strip()]
+    if suffix == ".jsonl":
+        return [r["text"].strip() for r in load_records(path) if r.get("text", "").strip()]
+    return [ln.strip() for ln in path.read_text(encoding="utf-8").splitlines() if ln.strip()]
+
+
+def review_queue(records: list[dict]) -> list[int]:
+    """Indexes of records a human should look at: flagged and not yet reviewed."""
+    return [i for i, r in enumerate(records) if r["needs_review"] and "reviewed_label" not in r]
+
+
+def review(path: str | Path, corrections: str | Path = "data/corrections.jsonl", ask=input, say=print) -> dict:
+    """Walk the NEEDS REVIEW requests: Enter accepts the guess, a number picks another type, s skips, q quits.
+    The answer is written back to the file and every decision is appended to the corrections file,
+    which `train --corrections` adds to the training data."""
+    records = load_records(path)
+    queue = review_queue(records)
+    done = fixed = 0
+    for i in queue:
+        r = records[i]
+        say(f"\n({done + 1}/{len(queue)}) \"{r['text']}\"\n  guess: {r['label']} ({r['confidence']:.0%}), "
+            f"runner-up: {r['runner_up']}")
+        answer = ask("  Enter = accept, number = pick, s = skip, q = quit > ").strip().lower()
+        if answer == "q":
+            break
+        if answer == "s":
+            continue
+        if answer.isdigit() and 1 <= int(answer) <= len(LABELS):
+            label = LABELS[int(answer) - 1]
+        elif answer == "":
+            label = r["label"]
+        else:
+            say("  not understood, skipped")
+            continue
+        r["reviewed_label"] = label
+        r["team"] = TEAMS[label]
+        fixed += label != r["label"]
+        done += 1
+        save_records_raw([{"text": r["text"], "label": label, "split": "train", "source": "review"}], corrections)
+    Path(path).write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in records), encoding="utf-8")
+    return {"reviewed": done, "corrected": int(fixed), "left": len(review_queue(records))}
+
+
+def build_digest(records: list[dict]) -> str:
+    """A markdown hand-over sheet: urgent items first, then each team's queue, then what needs a human."""
+    def label_of(r):
+        return r.get("reviewed_label", r["label"])
+    lines = [f"# Request digest ({len(records)} requests)", ""]
+    high = [r for r in records if r["priority"] == "high"]
+    lines += [f"## High priority ({len(high)})", ""]
+    lines += [f"- **{label_of(r)}** -> {r['team']}: {r['text']}" for r in high] or ["- none"]
+    lines += ["", "## By team", ""]
+    for team in dict.fromkeys(TEAMS.values()):
+        mine = [r for r in records if TEAMS[label_of(r)] == team]
+        if not mine:
+            continue
+        lines.append(f"### {team} ({len(mine)})")
+        for r in mine:
+            d = details_line(r["details"])
+            lines.append(f"- {r['text']}" + (f"  _({d})_" if d else ""))
+        lines.append("")
+    queue = review_queue(records)
+    lines += [f"## Needs a human ({len(queue)})", ""]
+    lines += [f"- {records[i]['text']}  (guess: {records[i]['label']} {records[i]['confidence']:.0%}, "
+              f"runner-up: {records[i]['runner_up']})" for i in queue] or ["- none"]
+    return "\n".join(lines) + "\n"
+
+
