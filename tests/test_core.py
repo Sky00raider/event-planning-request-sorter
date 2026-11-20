@@ -114,3 +114,44 @@ def test_milestone_2_encoder_puts_the_label_last_and_truncates_long_requests():
     assert ex[0][-1] == ids[2] and ex[1][-1] == ids[0] and len(ex[0]) <= 16
 
 
+# ===== Milestone 3: LoRA, Trainer, adapter file
+def test_milestone_3_lora_starts_as_the_pretrained_model_and_merges_exactly():
+    model, tok = tiny_base()
+    x = torch.randint(0, 100, (2, 7))
+    model.eval()
+    ref = model(x).logits
+    core.inject_lora(model, "c_attn", r=4)
+    assert torch.allclose(model(x).logits, ref, atol=1e-6)            # B = 0: no change yet
+    for m in model.modules():
+        if isinstance(m, core.LoRALinear):
+            m.B.data.normal_(0, 0.1)
+    unmerged = model(x).logits
+    assert core.merge_lora(model) == 2
+    assert torch.allclose(model(x).logits, unmerged, atol=1e-4)
+
+
+def test_milestone_3_only_lora_and_label_rows_train():
+    model, tok = tiny_base()
+    ids = core.add_label_tokens(model, tok, LABELS3)
+    core.inject_lora(model, r=4)
+    core.train_only_label_rows(model, ids)
+    names = [n for n, p in model.named_parameters() if p.requires_grad]
+    assert all(n.endswith((".A", ".B")) or "wte" in n for n in names) and len(names) == 2 * 2 + 1
+
+
+def test_milestone_3_trainer_learns_the_toy_set(trained):
+    run, cfg, _ = trained
+    assert run["report"]["final_train_loss"] < 1.0
+    acc = core.accuracy_of(run["model"], run["encoder"], toy_rows(1), cfg.labels, run["tokenizer"].pad_token_id)
+    assert acc >= 0.9 and run["report"]["val_accuracy"] >= 0.9
+
+
+def test_milestone_3_adapter_round_trip_gives_identical_scores(trained):
+    run, cfg, path = trained
+    model, tok, ids, cfg2 = core.load_adapter(path, tiny_base)
+    texts = ["hall for 200 guests", "send me a quote"]
+    a = core.label_logits(run["model"], run["encoder"].prompts(texts), run["label_ids"], tok.pad_token_id)
+    b = core.label_logits(model, core.RequestEncoder(tok, ids, 32).prompts(texts), ids, tok.pad_token_id)
+    assert torch.allclose(a, b, atol=1e-5) and cfg2.labels == LABELS3
+
+
