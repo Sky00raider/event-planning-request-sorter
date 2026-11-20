@@ -324,3 +324,130 @@ def train(cfg: TaggerConfig, train_rows: list[dict], val_rows: list[dict], base=
     return {"model": model, "tokenizer": tokenizer, "label_ids": label_ids, "encoder": encoder, "report": report}
 
 
+# ===== Milestone 4: inference pipeline, confidence triage, request details
+def decide(probs: np.ndarray, labels: list[str], threshold: float) -> list[dict]:
+    """Best label, confidence, runner-up and a NEEDS REVIEW flag for each row of label probabilities."""
+    out = []
+    for p in np.asarray(probs):
+        order = np.argsort(-p)
+        out.append({"label": labels[order[0]], "confidence": round(float(p[order[0]]), 4),
+                    "needs_review": bool(p[order[0]] < threshold), "runner_up": labels[order[1]]})
+    return out
+
+
+def calibrate_threshold(confidence: list[float], correct: list[bool], target: float = 0.95,
+                        fallback: float = 0.9) -> float:
+    """Lowest confidence at which everything auto-accepted (confidence >= t) is at least `target` accurate,
+    needing at least 10 accepted requests so one lucky example cannot set the bar."""
+    conf, ok = np.asarray(confidence), np.asarray(correct, dtype=float)
+    for t in sorted(set(conf.tolist())):
+        keep = conf >= t
+        if keep.sum() >= 10 and ok[keep].mean() >= target:
+            return round(float(t), 4)
+    return fallback
+
+
+MONTHS = (r"(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|"
+          r"sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)")
+WEEKDAYS = r"(?:mon|tues?|wed(?:nes)?|thu(?:rs)?|fri|sat(?:ur)?|sun)(?:day)?"
+CITIES = ["Bengaluru", "Bangalore", "Mysuru", "Mysore", "Kochi", "Cochin", "Pune", "Delhi", "Goa", "Dubai",
+          "Mumbai", "Chennai", "Hyderabad", "Kolkata", "Jaipur", "Udaipur", "Coorg", "Ooty", "Mangaluru",
+          "Trivandrum", "Thiruvananthapuram", "Ahmedabad", "Singapore", "London"]
+URGENT = re.compile(r"\b(urgent\w*|asap|immediately|right away|today|tonight|tomorrow|this (?:week|weekend)|"
+                    r"(?:in|within) (?:\d+|a|two|three|few) days?|last[- ]minute|emergency)\b", re.I)
+
+
+def _money(match: re.Match) -> float:
+    value = float(match.group("num").replace(",", "") or 0)
+    unit = (match.group("unit") or "").lower()
+    if unit.startswith(("lakh", "lac")) or unit == "l":
+        value *= 1e5
+    elif unit.startswith("cr"):
+        value *= 1e7
+    elif unit == "k":
+        value *= 1e3
+    elif unit == "m":
+        value *= 1e6
+    return value
+
+
+def extract_details(text: str) -> dict:
+    """Pull out what a coordinator would copy by hand: guests, budget, date, city, urgency (regex only)."""
+    out: dict = {}
+    m = re.search(r"(\d[\d,]*)\s*\+?\s*(?:guests?|pax|people|persons?|attendees|members|heads|invitees|ppl)\b",
+                  text, re.I)
+    if m:
+        out["guests"] = int(m.group(1).replace(",", ""))
+    m = re.search(r"(?P<cur>rs\.?|inr|₹|\$|usd|aed)\s*(?P<num>\d[\d,]*(?:\.\d+)?)\s*(?P<unit>lakhs?|lacs?|crores?|cr|k|m|l)?\b",
+                  text, re.I) or re.search(
+        r"(?P<cur>)(?P<num>\d[\d,]*(?:\.\d+)?)\s*(?P<unit>lakhs?|lacs?|crores?)\b", text, re.I)
+    if m:
+        cur = m.group("cur") or ""
+        out["budget"] = " ".join(m.group(0).split())
+        out["budget_value"] = _money(m)
+        out["currency"] = "USD" if cur in ("$",) or cur.lower() == "usd" else "AED" if cur.lower() == "aed" else "INR"
+    for pat in (r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b", rf"\b\d{{1,2}}(?:st|nd|rd|th)?\s+{MONTHS}\b(?:,?\s+\d{{4}})?",
+                rf"\b{MONTHS}\s+\d{{1,2}}(?:st|nd|rd|th)?\b(?:,?\s+\d{{4}})?",
+                rf"\b(?:this|next|coming)\s+(?:{WEEKDAYS}|weekend|month)\b", r"\b(?:day after tomorrow|tomorrow|tonight|today)\b"):
+        m = re.search(pat, text, re.I)
+        if m:
+            out["date"] = m.group(0)
+            break
+    for city in CITIES:
+        if re.search(rf"\b{city}\b", text, re.I):
+            out["city"] = city
+            break
+    out["urgent"] = bool(URGENT.search(text))
+    return out
+
+
+def priority_of(label: str, details: dict) -> str:
+    """High for anything time-critical or unhappy; low for off-topic; normal otherwise."""
+    if details.get("urgent") or label in ("complaint_feedback", "reschedule_cancel"):
+        return "high"
+    return "low" if label == "other" else "normal"
+
+
+def make_record(text: str, decision: dict) -> dict:
+    details = extract_details(text)
+    return {"received": datetime.now(timezone.utc).isoformat(timespec="seconds"), "text": text, **decision,
+            "team": TEAMS[decision["label"]], "priority": priority_of(decision["label"], details),
+            "details": details}
+
+
+class Sorter:
+    """Loads the adapter, merges it into GPT-2 and classifies requests."""
+
+    def __init__(self, adapter: str | Path = DEFAULT_ADAPTER, base=None, threshold: float | None = None):
+        self.model, self.tokenizer, self.label_ids, self.cfg = load_adapter(adapter, base)
+        merge_lora(self.model)
+        self.labels = self.cfg.labels
+        self.threshold = threshold if threshold is not None else self.cfg.extra.get("threshold", 0.9)
+        self.encoder = RequestEncoder(self.tokenizer, self.label_ids, self.cfg.max_len)
+
+    def probs(self, texts: list[str]) -> np.ndarray:
+        prompts = self.encoder.prompts(texts)
+        return softmax(label_logits(self.model, prompts, self.label_ids, self.tokenizer.pad_token_id).numpy())
+
+    def classify(self, texts: list[str]) -> list[dict]:
+        decisions = decide(self.probs(texts), self.labels, self.threshold)
+        return [make_record(t, d) for t, d in zip(texts, decisions)]
+
+
+def details_line(details: dict) -> str:
+    return ", ".join(f"{k}={details[k]}" for k in ("guests", "budget", "date", "city") if k in details)
+
+
+def format_record(rec: dict, index: int | None = None) -> str:
+    flag = "NEEDS REVIEW" if rec["needs_review"] else "ok"
+    head = f"[{index}] " if index is not None else ""
+    lines = [f"{head}{rec['label']}  {rec['confidence']:.0%}  {flag}  -> {rec['team']}  (priority: {rec['priority']})",
+             f"    \"{rec['text']}\""]
+    if rec["needs_review"]:
+        lines.append(f"    runner-up: {rec['runner_up']}")
+    found = details_line(rec["details"]) + (" [URGENT]" if rec["details"].get("urgent") else "")
+    if found.strip():
+        lines.append(f"    found: {found.strip()}")
+    return "\n".join(lines)
+
+

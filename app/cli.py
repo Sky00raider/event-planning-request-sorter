@@ -55,6 +55,56 @@ def cmd_train(a):
           f"adapter {size / 1024:.0f} KB -> {a.out}")
 
 
+# ===== Milestone 4: classify
+def _add_classify(sub):
+    p = sub.add_parser("classify", help="classify one or more requests given on the command line")
+    p.add_argument("texts", nargs="+")
+    _common_args(p)
+    p.set_defaults(func=cmd_classify)
+    c = sub.add_parser("chat", help="type requests one per line; an empty line quits")
+    _common_args(c)
+    c.set_defaults(func=cmd_chat)
+
+
+def _common_args(p):
+    p.add_argument("--adapter", default=str(core.DEFAULT_ADAPTER))
+    p.add_argument("--out", default=DEFAULT_OUT, help="file to save to: .jsonl or .csv")
+    p.add_argument("--no-save", action="store_true")
+    p.add_argument("--threads", type=int, help="limit CPU threads (handy when the machine is busy)")
+
+
+def get_sorter(a) -> "core.Sorter":
+    if a.threads:
+        import torch
+        torch.set_num_threads(a.threads)
+    return core.Sorter(a.adapter)
+
+
+def _show_and_save(a, records):
+    for i, r in enumerate(records, 1):
+        print(core.format_record(r, i))
+    if not a.no_save and records:
+        n = core.save_records(records, a.out)
+        print(f"saved {n} request(s) -> {a.out}")
+
+
+def cmd_classify(a):
+    _show_and_save(a, get_sorter(a).classify(a.texts))
+
+
+def cmd_chat(a):
+    sorter = get_sorter(a)
+    print("Type a client request and press Enter (empty line to quit).")
+    while True:
+        try:
+            text = input("request> ").strip()
+        except EOFError:
+            break
+        if not text:
+            break
+        _show_and_save(a, sorter.classify([text]))
+
+
 # ===== Main
 def main(argv: list[str] | None = None) -> None:
     try:

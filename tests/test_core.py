@@ -155,3 +155,60 @@ def test_milestone_3_adapter_round_trip_gives_identical_scores(trained):
     assert torch.allclose(a, b, atol=1e-5) and cfg2.labels == LABELS3
 
 
+# ===== Milestone 4: inference, triage, details
+@pytest.fixture(scope="module")
+def sorter(trained):
+    return core.Sorter(trained[2], base=tiny_base, threshold=0.5)
+
+
+def test_milestone_4_sorter_labels_requests_with_confidence_team_and_runner_up(sorter):
+    recs = sorter.classify(["looking for a hall in mysuru 1", "please send a quote 2"])
+    assert [r["label"] for r in recs] == ["venue_inquiry", "quote_pricing"]
+    r = recs[0]
+    assert 0 < r["confidence"] <= 1 and r["runner_up"] != r["label"] and r["team"] == "Venues desk"
+
+
+def test_milestone_4_probabilities_sum_to_one_and_threshold_flags_review(sorter):
+    p = sorter.probs(["hall", "cater"])
+    assert p.shape == (2, 3) and abs(p.sum(axis=1) - 1).max() < 1e-5
+    flags = core.decide(p, LABELS3, 1.01)
+    assert all(f["needs_review"] for f in flags) and not any(f["needs_review"] for f in core.decide(p, LABELS3, 0.0))
+
+
+def test_milestone_4_calibration_picks_lowest_safe_threshold():
+    conf = [0.99] * 10 + [0.7] * 10 + [0.5] * 10
+    right = [True] * 10 + [True] * 9 + [False] + [False] * 10
+    assert core.calibrate_threshold(conf, right, target=0.95) == 0.7
+    assert core.calibrate_threshold([0.6] * 12, [False] * 12, fallback=0.9) == 0.9
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("Need a lawn in Mysuru for 200 guests on 12 Dec, budget Rs 5 lakh",
+     {"guests": 200, "city": "Mysuru", "date": "12 Dec", "budget_value": 500000.0, "currency": "INR"}),
+    ("wedding on 15/02/2027 around 1,200 pax, budget $3k", {"guests": 1200, "date": "15/02/2027", "budget_value": 3000.0, "currency": "USD"}),
+    ("dj for next saturday in goa", {"date": "next saturday", "city": "goa"}),
+    ("may I ask about decor?", {"urgent": False}),
+])
+def test_milestone_4_details_are_extracted(text, expected):
+    d = core.extract_details(text)
+    for k, v in expected.items():
+        assert d[k] == v or str(d[k]).lower() == str(v).lower()
+    assert "date" not in core.extract_details("may I ask about decor?")
+
+
+def test_milestone_4_urgency_and_priority():
+    assert core.extract_details("need a caterer ASAP for tomorrow")["urgent"] is True
+    assert core.priority_of("venue_inquiry", {"urgent": True}) == "high"
+    assert core.priority_of("complaint_feedback", {"urgent": False}) == "high"
+    assert core.priority_of("other", {"urgent": False}) == "low"
+    assert core.priority_of("decor_design", {"urgent": False}) == "normal"
+
+
+def test_milestone_4_cli_classifies_and_prints(monkeypatch, capsys, sorter):
+    from app import cli
+    monkeypatch.setattr(cli, "get_sorter", lambda a: sorter)
+    cli.main(["classify", "looking for a hall in mysuru 1", "--no-save"])
+    out = capsys.readouterr().out
+    assert "venue_inquiry" in out and "Venues desk" in out and "saved" not in out
+
+
