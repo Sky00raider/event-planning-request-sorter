@@ -559,3 +559,92 @@ def build_digest(records: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
+# ===== Evaluation: baselines, metrics, triage trade-off
+KEYWORDS = {
+    "venue_inquiry": ["venue", "hall", "lawn", "resort", "banquet", "capacity", "auditorium", "farmhouse", "location", "space", "available on"],
+    "catering_request": ["catering", "caterer", "menu", "food", "veg", "buffet", "lunch", "dinner", "snacks", "per plate", "cuisine", "bar"],
+    "decor_design": ["decor", "decoration", "theme", "flowers", "floral", "stage", "lighting", "balloons", "mandap", "backdrop"],
+    "entertainment_booking": ["dj", "band", "singer", "emcee", "mc", "dancers", "magician", "music", "performer", "anchor", "games"],
+    "photo_video": ["photographer", "photography", "video", "videographer", "drone", "album", "camera", "reel", "shoot", "live stream"],
+    "guest_logistics": ["invitation", "invite", "rsvp", "hotel", "rooms", "pickup", "airport", "transport", "parking", "seating", "bus"],
+    "quote_pricing": ["quote", "quotation", "price", "pricing", "cost", "budget", "package", "discount", "advance", "payment", "rates", "how much"],
+    "reschedule_cancel": ["reschedule", "postpone", "cancel", "refund", "change the date", "shift", "move the", "preponed"],
+    "general_planning": ["plan", "planner", "organise", "organize", "end to end", "full service", "consultation", "help us", "manage"],
+    "complaint_feedback": ["complaint", "disappointed", "bad", "terrible", "late", "rude", "thank", "feedback", "review", "worst", "compensation", "amazing"],
+}
+
+
+class KeywordBaseline:
+    """The rules someone would write in ten minutes: count keyword hits per type, 'other' if none."""
+
+    def predict(self, texts: list[str]) -> list[str]:
+        out = []
+        for t in texts:
+            low = " " + t.lower() + " "
+            hits = {k: sum(w in low for w in ws) for k, ws in KEYWORDS.items()}
+            best = max(hits, key=hits.get)
+            out.append(best if hits[best] else "other")
+        return out
+
+
+def _tokens(text: str) -> list[str]:
+    w = re.findall(r"[a-z0-9']+", text.lower())
+    return w + [a + "_" + b for a, b in zip(w, w[1:])]
+
+
+class NaiveBayes:
+    """Multinomial Naive Bayes on word + bigram counts (add-one smoothing), written with numpy only."""
+
+    def fit(self, rows: list[dict], labels: list[str] = LABELS):
+        self.labels = list(labels)
+        vocab = sorted({tok for r in rows for tok in _tokens(r["text"])})
+        self.index = {w: i for i, w in enumerate(vocab)}
+        counts = np.ones((len(labels), len(vocab)))
+        prior = np.zeros(len(labels))
+        for r in rows:
+            k = self.labels.index(r["label"])
+            prior[k] += 1
+            for tok in _tokens(r["text"]):
+                counts[k, self.index[tok]] += 1
+        self.logp = np.log(counts / counts.sum(axis=1, keepdims=True))
+        self.logprior = np.log(prior / prior.sum())
+        return self
+
+    def probs(self, texts: list[str]) -> np.ndarray:
+        scores = np.zeros((len(texts), len(self.labels)))
+        for i, t in enumerate(texts):
+            idx = [self.index[tok] for tok in _tokens(t) if tok in self.index]
+            scores[i] = self.logprior + self.logp[:, idx].sum(axis=1)
+        return softmax(scores)
+
+    def predict(self, texts: list[str]) -> list[str]:
+        return [self.labels[i] for i in self.probs(texts).argmax(axis=1)]
+
+
+def accuracy(pred: list[str], gold: list[str]) -> float:
+    return float(np.mean([p == g for p, g in zip(pred, gold)]))
+
+
+def per_class_f1(pred: list[str], gold: list[str], labels: list[str] = LABELS) -> dict[str, float]:
+    out = {}
+    for k in labels:
+        tp = sum(p == k and g == k for p, g in zip(pred, gold))
+        fp = sum(p == k and g != k for p, g in zip(pred, gold))
+        fn = sum(p != k and g == k for p, g in zip(pred, gold))
+        out[k] = round(2 * tp / (2 * tp + fp + fn), 3) if tp + fp + fn else 0.0
+    return out
+
+
+def macro_f1(pred: list[str], gold: list[str], labels: list[str] = LABELS) -> float:
+    return float(np.mean(list(per_class_f1(pred, gold, labels).values())))
+
+
+def coverage_table(confidence: list[float], correct: list[bool], thresholds: list[float]) -> list[dict]:
+    """For each review threshold: share of requests auto-accepted and their accuracy."""
+    conf, ok = np.asarray(confidence), np.asarray(correct, dtype=float)
+    rows = []
+    for t in thresholds:
+        keep = conf >= t
+        rows.append({"threshold": t, "auto": float(keep.mean()),
+                     "auto_accuracy": float(ok[keep].mean()) if keep.any() else float("nan")})
+    return rows

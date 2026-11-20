@@ -276,3 +276,19 @@ def test_milestone_5_digest_groups_by_team_and_lists_urgent_first(sorter):
     assert "cater lunch 3 urgent" in text.split("## By team")[0]
 
 
+# ===== Evaluation: baselines and metrics
+def test_evaluation_keyword_baseline_and_naive_bayes_learn_the_toy_set():
+    rows = toy_rows()
+    texts, gold = [r["text"] for r in rows], [r["label"] for r in rows]
+    nb = core.NaiveBayes().fit(rows, LABELS3)
+    assert core.accuracy(nb.predict(texts), gold) > 0.95
+    assert core.KeywordBaseline().predict(["need a dj", "tell me about nothing"]) == ["entertainment_booking", "other"]
+
+
+def test_evaluation_metrics_and_coverage_table():
+    pred, gold = ["a", "a", "b", "b"], ["a", "b", "b", "b"]
+    assert core.accuracy(pred, gold) == 0.75
+    f1 = core.per_class_f1(pred, gold, ["a", "b"])
+    assert f1 == {"a": 0.667, "b": 0.8} and abs(core.macro_f1(pred, gold, ["a", "b"]) - 0.7335) < 1e-3
+    rows = core.coverage_table([0.9, 0.8, 0.6, 0.5], [True, True, False, True], [0.0, 0.7])
+    assert rows[0]["auto"] == 1.0 and rows[1] == {"threshold": 0.7, "auto": 0.5, "auto_accuracy": 1.0}
